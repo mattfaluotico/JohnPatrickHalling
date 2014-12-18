@@ -1,3 +1,11 @@
+'use strict';
+
+$(document).ready(function() {
+	getTweets();		
+});
+
+var tweetCount = 0;
+
 function sendEmail() {
 	$.post('/contact', {
 			name: 'John Smith',
@@ -11,7 +19,24 @@ function sendEmail() {
 }
 
 function getTweets() {
-	$.post('/getTweets', { index: '4'} , function(data, textStatus, xhr) {
-		console.log(data)
+	$.post('/getTweets', { index: tweetCount.toString()} , function(data) {
+		$("#tweet").html(data);
+		tweetCount++;
 	});
+}
+
+function validateEmailForm() {
+	var email = $("input[name='email'");
+}
+
+function validateSubject() {
+	var subject = $("input[name='subject");
+	if (subject.value.length > 180) {
+		
+	}
+
+}
+
+function clearFields() {
+	$(".email-field").attr('value', '');
 }

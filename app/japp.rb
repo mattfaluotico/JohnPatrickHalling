@@ -32,10 +32,7 @@ get '/' do
 end
 
 get '/bio' do
-  erb :bio, :locals => 
-  { :page_title => "bio",
-    :latest_tweet => get_most_recent_tweet
-  }
+  erb :bio, :locals => { :page_title => "bio"}
 end
 
 get '/music' do
@@ -67,9 +64,7 @@ post '/contact' do
   puts email.to_s
   email.delivery_method :sendmail
   email.deliver!
-
   redirect '/contact'
-
 end
 
 get '/photos' do
@@ -86,10 +81,7 @@ end
 
 post '/getTweets', :provides => :json do
   content_type :json
-  index = params[:index].to_i
-  puts index
-  tweet = get_tweet_at index
-  puts tweet
+  tweet = get_tweet_at(params[:index].to_i)
   tweet.to_json
 end
 
