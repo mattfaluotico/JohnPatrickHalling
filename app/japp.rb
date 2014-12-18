@@ -7,6 +7,10 @@
 require 'sinatra'
 require 'mail'
 require 'twitter'
+require 'json'
+
+# set :environment, :production
+set :environment, :development
 
 def init_twitter
   $client = Twitter::REST::Client.new do |config|
@@ -80,7 +84,21 @@ not_found do
   "That page isn't real"
 end
 
+post '/getTweets', :provides => :json do
+  content_type :json
+  index = params[:index].to_i
+  puts index
+  tweet = get_tweet_at index
+  puts tweet
+  tweet.to_json
+end
+
 def get_most_recent_tweet
   $client.user_timeline("gem")
   $client.user_timeline(264995657).first.text
+end
+
+def get_tweet_at(index)
+  $client.user_timeline("gem")
+  $client.user_timeline(264995657)[index].text
 end

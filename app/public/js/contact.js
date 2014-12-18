@@ -9,3 +9,9 @@ function sendEmail() {
 			// Disable Button until fields change
 	});
 }
+
+function getTweets() {
+	$.post('/getTweets', { index: '4'} , function(data, textStatus, xhr) {
+		console.log(data)
+	});
+}
