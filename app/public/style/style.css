@@ -1,0 +1,73 @@
+body {
+  background-color: RGBA(44, 44, 44, 1); }
+
+footer {
+  font-family: Futura Std;
+  font-size: 9pt;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  margin: 0 auto;
+  color: white;
+  width: 100%; }
+  footer .copyright, footer .social-block {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0; }
+  footer .copyright {
+    width: 50%;
+    text-align: left; }
+  footer .social-block {
+    width: 50%;
+    text-align: right; }
+  footer #designer {
+    text-decoration: none;
+    color: white; }
+    footer #designer:hover {
+      text-decoration: underline;
+      color: white; }
+
+.selection {
+  margin: 5px; }
+
+.options {
+  text-align: right; }
+
+.option-link {
+  text-decoration: none;
+  color: grey;
+  font-size: 16pt; }
+  .option-link:hover {
+    text-decoration: none;
+    color: white; }
+
+header {
+  margin: 0;
+  padding: 0;
+  font-family: Futura Std;
+  color: white; }
+  header > div {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    height: 100px; }
+    header > div > h2 {
+      font-size: 24pt;
+      margin: 0;
+      padding: 0; }
+
+.tweet {
+  font-family: Baskerfield;
+  font-style: italic;
+  font-weight: 200;
+  color: white;
+  height: 200px;
+  margin-left: 15%;
+  margin-right: 15%; }
+  .tweet:before {
+    content: "\""; }
+  .tweet:after {
+    content: "\" - @JPHalling"; }
+
+/*# sourceMappingURL=style.css.map */

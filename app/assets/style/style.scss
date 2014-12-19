@@ -1,0 +1,126 @@
+@import "bourbon/bourbon";
+
+@mixin sans {
+	font-family: Futura Std;
+}
+
+@mixin serif {
+	font-family: Baskerfield;
+}
+
+@mixin blur($level) {
+	-webkit-filter: blur($level); 
+	-moz-filter: blur($level); 
+	-o-filter: blur($level); 
+	-ms-filter: blur($level); 
+	filter: blur($level);
+}
+
+@mixin no-magins-padding {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin inline {
+	float: left;
+	display: inline-block;
+	width: 50%;
+}
+
+// ----------------------
+
+body {
+	background-color: RGBA(44, 44, 44, 1);
+}
+
+footer {
+	@include sans;
+	font-size: 9pt;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	margin: 0 auto;
+
+
+	color: white;
+	width: 100%;
+	
+	.copyright, .social-block {
+		display: inline-block;
+		float: left;
+		@include no-magins-padding;
+	}
+
+	.copyright {
+		width: 50%;
+		text-align: left;
+	}
+
+	.social-block {
+		width: 50%;
+		text-align: right;
+	}
+
+	#designer {
+		text-decoration: none;
+		color: white;
+
+		&:hover {
+			text-decoration: underline;
+			color: white;
+		}
+	}
+}
+
+.selection {
+	margin: 5px;
+
+}
+
+.options {
+	text-align: right;
+}
+
+.option-link {
+		text-decoration: none;
+		color: grey;
+		font-size: 16pt;
+	&:hover {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+header {
+	@include no-magins-padding;
+	@include sans;
+	color: white;
+	> div {
+		@include inline;
+		height: 100px;
+		> h2 {	
+			font-size: 24pt;
+			@include no-magins-padding;
+		}
+	}
+
+}
+
+// Bio
+
+.tweet {
+	@include serif;
+	font-style: italic;
+	font-weight: 200;
+	color: white;
+	height: 200px;
+	margin-left: 15%;
+	margin-right: 15%;
+	&:before {
+		content: "\"";
+	}
+
+	&:after {
+		content: "\" - @JPHalling";
+	}
+}

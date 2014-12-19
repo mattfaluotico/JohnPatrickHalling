@@ -19,11 +19,17 @@ function sendEmail() {
 }
 
 function getTweets() {
-	$.post('/getTweets', { index: tweetCount.toString()} , function(data) {
-		$("#tweet").html(data);
-		tweetCount++;
-	});
-}
+
+	var twitterdiv = $("#tweet");
+	if (twitterdiv.length) {
+		twitterdiv.css('visibility', 'hidden');
+		$.post('/getTweets', { index: tweetCount.toString()} , function(data) {
+			twitterdiv.css('visibility', 'visible');
+			twitterdiv.html(data);
+			tweetCount++;
+		});
+	}
+};
 
 function validateEmailForm() {
 	var email = $("input[name='email'");
