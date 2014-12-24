@@ -148,6 +148,8 @@ header {
 	}
 }
 
+
+
 .quote {
 	@include span-columns(6);
 	@include shift(3);
@@ -170,6 +172,9 @@ header {
 
 .img-holder {
 	text-align: center;
+		@include media($middle) {
+			height: 200px;
+	}
 }
 
 #tweet {
