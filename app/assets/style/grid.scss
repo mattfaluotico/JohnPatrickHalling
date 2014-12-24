@@ -1,0 +1,149 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$mobile: new-breakpoint(max-width 480px);
+$little-screen: new-breakpoint(max-width 850px);
+$big-screen: new-breakpoint(min-width 850px);
+
+.huge {
+	@include span-columns(12);
+}
+
+// Centered-x | Creates a div that is 'x' columns wide
+
+.outer {
+	@include outer-container;
+}
+
+.centered-full {
+	@include span-columns(12);	
+}
+
+.centered-12 {
+	@include span-columns(12);	
+}
+
+.centered-11 {
+	@include span-columns(11);
+	@include shift(0.5);
+
+	@include media($mobile) {
+		@include span-columns(12);
+		@include shift(0);
+	}
+}
+
+.centered-10 {
+	@include span-columns(10);
+	@include shift(1);
+
+	@include media($mobile) {
+		@include span-columns(12);
+		@include shift(0);
+	}
+}
+
+.centered-9 {
+	@include span-columns(9);
+	@include shift(1.5);
+
+	@include media($mobile) {
+		@include span-columns(12);
+		@include shift(0);
+	}
+}
+
+.centered-8 {
+	@include span-columns(8);
+	@include shift(2);
+
+	@include media($mobile) {
+		@include span-columns(12);
+		@include shift(0);
+	}
+}
+
+.centered-7 {
+	@include span-columns(7);
+	@include shift(2.5);
+
+	@include media($mobile) {
+		@include span-columns(12);
+		@include shift(0);
+	}
+}
+
+.centered-6 {
+	@include span-columns(6);
+	@include shift(3);
+
+	@include media($little-screen) {
+		@include span-columns(9);
+		@include shift(1.5);
+	}
+
+	@include media($mobile) {
+		@include span-columns(11);
+		@include shift(0.5);
+	}
+}
+
+.centered-5 {
+	@include span-columns(5);
+	@include shift(3.5);
+
+	@include media($mobile) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+}
+
+.centered-4 {
+	@include span-columns(4);
+	@include shift(4);
+
+	@include media($mobile) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+}
+
+.centered-3 {
+	@include span-columns(3);
+	@include shift(4.5);
+
+	@include media($mobile) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+}
+
+.half {
+	@include span-columns(6);
+
+	@include media($mobile) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+}
+
+.third {
+	@include span-columns(4);
+
+	@include media($little-screen) {
+		@include span-columns(6);
+	}
+
+	@include media($big-screen) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+}
+
+.third-fixed {
+	@include span-columns(4);
+
+	@include media($mobile) {
+		@include span-columns(12);
+	}
+}

@@ -1,7 +1,10 @@
 'use strict';
 
+var twitterdivContent;
+
 $(document).ready(function() {
-	getTweets();		
+	twitterdivContent = $("#tweet").html();
+	// getTweets();		
 });
 
 var tweetCount = 0;
@@ -22,7 +25,8 @@ function getTweets() {
 
 	var twitterdiv = $("#tweet");
 	if (twitterdiv.length) {
-		twitterdiv.css('visibility', 'hidden');
+		twitterdiv.html(twitterdivContent);
+		// twitterdiv.css('visibility', 'hidden');
 		$.post('/getTweets', { index: tweetCount.toString()} , function(data) {
 			twitterdiv.css('visibility', 'visible');
 			twitterdiv.html(data);
