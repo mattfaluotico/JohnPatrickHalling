@@ -73,11 +73,6 @@ h2 {
 }
 
 
-a {
-	color: white;
-	text-decoration: none;
-}
-
-a:hover {
-	color: purple;
+.dog {
+	color: green;
 }

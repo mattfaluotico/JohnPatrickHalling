@@ -14,6 +14,8 @@ $desktop: new-breakpoint(min-width 850px);
 	font-family: Baskerfield;
 }
 
+
+
 @mixin blur($level) {
 	-webkit-filter: blur($level); 
 	-moz-filter: blur($level); 
@@ -103,9 +105,9 @@ header {
 	color: white;
 	
 	div.name {
-		@include span-columns(5);
+		@include span-columns(12);
 		h2 {
-			text-align: left;
+			text-align: center;
 			font-size: 24pt;
 			@include no-magins-padding;
 
@@ -115,15 +117,6 @@ header {
 			}
 		}
 		@include media($middle) {
-			@include span-columns(12);
-		}
-	}
-
-	div.options {
-		@include span-columns(7);
-		text-align: right;
-		@include media($middle) {
-			text-align: center;
 			@include span-columns(12);
 		}
 	}
@@ -140,11 +133,19 @@ header {
 	@include no-magins-padding;
 	color: white;
 	text-align: justify;
-	height: 300px;
+	// height: 300px;
+	position: relative;
+
+	p {
+		padding: 0;
+		margin-top: 0;
+
+	}
 
 	@include media($middle) {
 		@include span-columns(11);
 		@include shift(0.5);
+		display: inline-block;
 	}
 }
 
@@ -168,12 +169,30 @@ header {
 	font-style: italic;
 	font-weight: 200;
 	color: white;
+
+	p {
+		.source {
+			@include sans;
+			color: grey;
+		}
+	}	
+}
+
+
+.schedule {
+	text-align: center;
+	color: white;
+	@include sans;
+	p {
+		margin: 0;
+		margin-top: 10px;
+	}
 }
 
 .img-holder {
 	text-align: center;
 		@include media($middle) {
-			height: 200px;
+			display: inline-block;
 	}
 }
 
@@ -252,4 +271,25 @@ header {
 	color: white;
 	text-align: left;
 	resize: none;
+}
+
+.submit {
+	@include span-columns(2);
+	height: 40px;
+	width: 120px;	
+	box-shadow: none;
+	border: none;
+	@include sans;
+	background-color: rgba(40, 40, 40, 0.568627);
+	font-size: 18pt;
+	color: white;
+
+	&:hover {
+		color: #33b5e5;
+	}
+
+	&:focus {
+		outline: none;
+		color: #33b5e5;
+	}
 }

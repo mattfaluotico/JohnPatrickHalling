@@ -28,23 +28,7 @@ configure do
 end
 
 get '/' do
-  erb :index, :locals => {:page_title => "home"}, :layout => false
-end
-
-get '/bio' do
-  erb :bio, :locals => { :page_title => "bio"}
-end
-
-get '/music' do
-  erb :music, :locals => {:page_title => "music"}
-end
-
-get '/videos' do
-  erb :videos, :locals => {:page_title => "videos"}
-end
-
-get '/contact' do
-  erb :contact, :locals => {:page_title => "contact"}
+  erb :index, :locals => {:page_title => "home"}
 end
 
 post '/contact' do
@@ -63,17 +47,10 @@ post '/contact' do
 
   puts email.to_s
   email.delivery_method :sendmail
-  email.deliver!
+  # email.deliver!
   redirect '/contact'
 end
 
-get '/photos' do
-  erb :contact,:locals => {:page_title => "photos"}
-end
-
-get '/dates' do
-  erb :dates, :locals => {:page_title => "dates"}
-end
 
 not_found do
   "That page isn't real"

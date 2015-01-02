@@ -362,11 +362,11 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 40.29137%; }
+    width: 100%; }
     header div.name:last-child {
       margin-right: 0; }
     header div.name h2 {
-      text-align: left;
+      text-align: center;
       font-size: 24pt;
       margin: 0;
       padding: 0; }
@@ -381,23 +381,6 @@ header {
         width: 100%; }
         header div.name:last-child {
           margin-right: 0; } }
-  header div.options {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
-    text-align: right; }
-    header div.options:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 850px) {
-      header div.options {
-        text-align: center;
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        header div.options:last-child {
-          margin-right: 0; } }
   header div {
     margin: 0;
     padding: 0; }
@@ -411,16 +394,20 @@ header {
   padding: 0;
   color: white;
   text-align: justify;
-  height: 300px; }
+  position: relative; }
   .bio:last-child {
     margin-right: 0; }
+  .bio p {
+    padding: 0;
+    margin-top: 0; }
   @media screen and (max-width: 850px) {
     .bio {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 91.4702%;
-      margin-left: 4.2649%; }
+      margin-left: 4.2649%;
+      display: inline-block; }
       .bio:last-child {
         margin-right: 0; } }
 
@@ -451,12 +438,23 @@ header {
       font-size: 12pt; }
       .quote:last-child {
         margin-right: 0; } }
+  .quote p .source {
+    font-family: Helvetica Neue;
+    color: grey; }
+
+.schedule {
+  text-align: center;
+  color: white;
+  font-family: Helvetica Neue; }
+  .schedule p {
+    margin: 0;
+    margin-top: 10px; }
 
 .img-holder {
   text-align: center; }
   @media screen and (max-width: 850px) {
     .img-holder {
-      height: 200px; } }
+      display: inline-block; } }
 
 #tweet {
   height: 100px; }
@@ -544,6 +542,27 @@ header {
   color: white;
   text-align: left;
   resize: none; }
+
+.submit {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  height: 40px;
+  width: 120px;
+  box-shadow: none;
+  border: none;
+  font-family: Helvetica Neue;
+  background-color: rgba(40, 40, 40, 0.56863);
+  font-size: 18pt;
+  color: white; }
+  .submit:last-child {
+    margin-right: 0; }
+  .submit:hover {
+    color: #33b5e5; }
+  .submit:focus {
+    outline: none;
+    color: #33b5e5; }
 
 /* Neat 1.7.0
  * http://neat.bourbon.io
