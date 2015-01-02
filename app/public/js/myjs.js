@@ -31,6 +31,7 @@ function sendEmail() {
 			content: 'Content....'
 		}, function() {
 			var button = $("#submit");
+			console.log("hello");
 			button.html("Email Sent");
 			button.width(160);
 			button.prop('disabled', 'true');

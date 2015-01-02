@@ -47,8 +47,8 @@ post '/contact' do
 
   puts email.to_s
   email.delivery_method :sendmail
-  # email.deliver!
-  redirect '/contact'
+  email.deliver!
+  redirect '/'
 end
 
 

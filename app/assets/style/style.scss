@@ -39,6 +39,7 @@ $desktop: new-breakpoint(min-width 850px);
 
 body {
 	background-color: RGBA(44, 44, 44, 1);
+	margin-bottom: 20px;
 }
 
 footer {
@@ -155,6 +156,8 @@ header {
 	@include span-columns(6);
 	@include shift(3);
 	font-size: 18pt;
+
+
 	@include media($middle) {
 		font-size: 16pt;
 	}
@@ -199,13 +202,14 @@ header {
 #tweet {
 	height: 100px;
 	@include media($mobile) {
-		height: 50px;
+		height: 100%;
 	}
 }
 
 .tweet-block {
 	margin-top: 10px;
 	@include outer-container;
+
 	.tweet {
 		@include span-columns(6);
 		@include shift(3);
