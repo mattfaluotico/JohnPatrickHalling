@@ -64,6 +64,7 @@ header.open {
 
 .burger {
 	position: absolute;
+	user-select: none;
 	@include burger(25px, 3px, 5px, black);
 }
 

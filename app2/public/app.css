@@ -120,6 +120,7 @@ header.open {
 
 .burger {
   position: absolute;
+  user-select: none;
   position: relative;
   margin-top: 8px;
   margin-bottom: 8px; }

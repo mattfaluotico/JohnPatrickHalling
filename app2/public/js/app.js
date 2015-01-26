@@ -11,6 +11,10 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	$(".menu-link").click(function(event) {
+		closeHeader($menu);
+	});
+
 	function openHeader(button) {
 		$(button).addClass('burger-closed');
 		$header.removeClass('closed');
