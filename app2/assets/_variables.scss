@@ -1,0 +1,10 @@
+$mobile: max-width 480px;
+
+@mixin serif {
+	font-family: Perpetua;
+}
+
+
+@mixin sans {
+	font-family: Helvetica;
+}
