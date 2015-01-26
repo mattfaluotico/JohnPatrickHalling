@@ -45,6 +45,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/**
+ * Burger parts
+ *
+ * (---) top    -> &:before
+ * [---] middle -> &
+ * (---) bottom -> &:after
+ */
+/**
+ * Burger
+ */
+/**
+ * Select parts of the burger
+ */
+/**
+ * Burger animations
+ */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -57,10 +73,12 @@ html {
 
 body {
   font-family: Helvetica;
-  background-color: navy; }
+  background-color: navy;
+  margin-top: 100px; }
 
 header {
   position: fixed;
+  top: 0;
   text-align: center;
   width: 100%;
   background-color: white;
@@ -80,6 +98,84 @@ header {
     text-decoration: none; }
     header a:hover {
       color: black; }
+
+header.closed {
+  height: 75px; }
+  header.closed .footer {
+    opacity: 0; }
+
+header.open {
+  height: 100%; }
+  header.open .footer {
+    opacity: 1; }
+
+.burger-house {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 25px;
+  margin: 25px; }
+  .burger-house:hover {
+    cursor: pointer; }
+
+.burger {
+  position: absolute;
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+  .burger, .burger:before, .burger:after {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    -webkit-transition-property: background-color, -webkit-transform;
+    -moz-transition-property: background-color, -moz-transform;
+    -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, transform;
+    -webkit-animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    -moz-animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  .burger:before, .burger:after {
+    position: absolute;
+    content: ""; }
+  .burger:before {
+    top: -8px; }
+  .burger:after {
+    top: 8px; }
+
+.burger-closed > .burger {
+  background-color: transparent; }
+.burger-closed > .burger:before {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -moz-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+  -webkit-animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }
+.burger-closed > .burger:after {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -moz-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+  -webkit-animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }
+
+.social {
+  font-size: 16	pt;
+  padding: 15px; }
+  .social hr {
+    width: 100px;
+    height: 1px;
+    border: 0;
+    background-color: black; }
 
 .footer {
   height: 75px;
@@ -115,16 +211,6 @@ header {
   -moz-transition-delay: 0.2s;
   transition-delay: 0.2s; }
 
-header.closed {
-  height: 75px; }
-  header.closed .footer {
-    opacity: 0; }
-
-header.open {
-  height: 100%; }
-  header.open .footer {
-    opacity: 1; }
-
 .header-container {
   height: calc(100% - 150px); }
 
@@ -137,5 +223,19 @@ header.open {
   @media screen and (max-width: 480px) {
     .title {
       font-size: 18pt; } }
+
+.outer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .outer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+form h2 {
+  font-family: Helvetica;
+  color: white;
+  font-size: 18pt; }
 
 /*# sourceMappingURL=app.css.map */

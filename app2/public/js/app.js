@@ -1,30 +1,26 @@
-var $header;
-
 jQuery(document).ready(function($) {
 	
 	// init variables
-	$header = $("header");
+	var $header = $("header");
 
-	$(".title").click(function(event) {
-		if ($header.hasClass('open')) {
-			closeHeader();
+	var $menu = $("#menu").click(function(event) {
+		if( $(this).hasClass('burger-closed')) {
+			closeHeader(this);
 		} else {
-			openHeader();
+			openHeader(this);
 		}
 	});
 
-		function openHeader() {
-			$header.removeClass('closed');
-			$header.addClass('open');
-		}
+	function openHeader(button) {
+		$(button).addClass('burger-closed');
+		$header.removeClass('closed');
+		$header.addClass('open');
+	}
 
-		function closeHeader() {
-			$header.removeClass('open');
-			$header.addClass('closed');
-		}
+	function closeHeader(button) {
+		$(button).removeClass('burger-closed');
+		$header.removeClass('open');
+		$header.addClass('closed');
+	}
 
 });
-
-
-
-

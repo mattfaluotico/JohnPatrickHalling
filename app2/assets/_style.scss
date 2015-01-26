@@ -1,10 +1,12 @@
 body {
 	@include sans;
 	background-color: navy;
+	margin-top: 100px;
 }
 
 header {
 	position: fixed;
+	top: 0;
 	text-align: center;
 	width: 100%;
 	background-color: white;
@@ -32,11 +34,59 @@ header {
 	}
 }
 
+header.closed {
+	height: 75px;
+
+	.footer {
+		opacity: 0
+	}
+}
+
+header.open {
+	height: 100%;
+	
+	.footer {
+		opacity: 1;
+	}
+}
+
+.burger-house {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 25px;
+	margin: 25px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.burger {
+	position: absolute;
+	@include burger(25px, 3px, 5px, black);
+}
+
+.burger-closed > .burger {
+	@include burger-to-cross;
+}
+
+.social {
+	font-size: 16	pt;
+	padding: 15px;
+	hr {
+		width: 100px;
+		height: 1px;
+		border: 0;
+		background-color: black;
+	}
+}
+
 .footer {
 	
 	height: 75px;
 	line-height: 75px;
-	
+
 	@include transition(all 0.2s);
 
 	hr {
@@ -70,22 +120,6 @@ header {
 	@include transition-delay(0.2s);
 }
 
-header.closed {
-	height: 75px;
-
-	.footer {
-		opacity: 0
-	}
-}
-
-header.open {
-	height: 100%;
-	
-	.footer {
-		opacity: 1;
-	}
-}
-
 .header-container {
 	height: calc(100% - 150px);
 }
@@ -98,6 +132,18 @@ header.open {
 	text-transform: uppercase;
 
 	@include media($mobile) {
+		font-size: 18pt;
+	}
+}
+
+.outer {
+	@include outer-container();
+}
+
+form {
+	h2 {
+		@include sans;
+		color: white;
 		font-size: 18pt;
 	}
 }
