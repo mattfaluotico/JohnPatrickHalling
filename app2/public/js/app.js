@@ -1,7 +1,13 @@
 jQuery(document).ready(function($) {
 	
+	adjustDisplay();
+
 	// init variables
 	var $header = $("header");
+
+	var $button= $("#send").click(function(event) {
+		sendEmail();
+	});
 
 	var $menu = $("#menu").click(function(event) {
 		if( $(this).hasClass('burger-closed')) {
@@ -14,6 +20,13 @@ jQuery(document).ready(function($) {
 	$(".menu-link").click(function(event) {
 		closeHeader($menu);
 	});
+
+
+	function adjustDisplay() { 
+		if (window.innerWidth < 500) {
+			$("#title").html("JPH");
+		} 
+	}
 
 	function openHeader(button) {
 		$(button).addClass('burger-closed');
@@ -28,3 +41,7 @@ jQuery(document).ready(function($) {
 	}
 
 });
+
+function sendEmail() {
+	alert("sent");
+}

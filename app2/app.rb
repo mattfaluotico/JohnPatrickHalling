@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'json'
 require 'mail'
 
 # -----------------------------------
@@ -7,12 +8,18 @@ require 'mail'
 # mattfaluotico.github.io
 # -----------------------------------
 
+set :environment, :development
+
+configure do
+  set :server, 'thin'
+end
+
 get '/' do
   erb :index
 end
 
 post '/contact' do
-
+  puts "pretend email sent"
   name = params[:name]
   from = params[:email]
   subj =  params[:subject]
@@ -27,7 +34,5 @@ post '/contact' do
 
   puts email.to_s
   email.delivery_method :sendmail
-  email.deliver!
-
-  # redirect '/'
+  email.deliver!  
 end

@@ -1,7 +1,8 @@
-@import "_reset";
-@import "_variables";
-@import '_burger.scss';
+@import "reset";
+@import "variables";
+@import 'burger';
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import "grid";
 @import "style";
-@import "animations";
+@import "news";
