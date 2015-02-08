@@ -1,7 +1,7 @@
 .date {
 	position: absolute;
 	top: calc(50% - 37.5px);
-	left: -37.5px;
+	left: 0;
 	background-color: $red;
 	height: 75px;
 	width: 75px;
@@ -15,7 +15,6 @@
 	@include media($mobile) {
 		height: 50px;
 		width: 50px;
-		left: 0px;
 		top: calc(50% - 25px);
 		border-radius: 50px;
 	}
@@ -51,7 +50,11 @@
 }
 
 .news {
-	margin-left: 50px;
+	margin-left: 100px;
+
+	@include media($mobile) {
+		margin-left: 50px;
+	}
 }
 
 .news-title {
