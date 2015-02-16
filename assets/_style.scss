@@ -101,7 +101,10 @@ header.open {
 }
 
 .social {
-	font-size: 16	pt;
+	a {
+		font-size: 20pt;
+		padding: 5px;
+	}
 	padding: 15px;
 	hr {
 		width: $hr-width;
@@ -337,4 +340,8 @@ textarea.form-input {
 	border-radius: 75px;
 	background-color: $blue;
 
+}
+
+.contact-tag {
+	text-align: center;
 }
