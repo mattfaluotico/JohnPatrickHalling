@@ -1,0 +1,26 @@
+section {
+	@include outer-container();
+}
+
+.content {
+	@include span-columns(10);
+	@include shift(1);
+}
+
+.full {
+	@include span-columns(10 of 10);
+}
+
+.sub {
+	@include span-columns(5 of 10);
+	display: block;
+	@include omega(2);
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	@include media($little) {
+		@include span-columns(10 of 10);
+		display: block;
+	}
+}

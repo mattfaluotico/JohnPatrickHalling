@@ -1,0 +1,11 @@
+<div class="content">
+	<div class="sec">
+		<h2 class="section-title">DATES</h2>
+		<hr class="small-rule">
+	</div>
+
+	<!-- Entries -->
+	<% @shows.each do |event| %>
+		<%= get_show(event) %>
+	<% end %>
+</div>

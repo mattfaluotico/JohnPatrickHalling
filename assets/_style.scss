@@ -1,0 +1,340 @@
+body {
+	@include sans-normal;
+	background: url('/img/ac.jpg');
+	background-position: 0;
+	background-position: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-origin: 0;
+	color: $black;
+	@include selection {
+	  background-color: $blue;
+}
+}
+
+p {
+	@include sans;
+	@include top-bottom-margin(5px);
+	font-size: 14pt;
+	line-height: 18pt;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+section {
+	background-color: rgba(230,230,230,0.9);
+}
+
+header {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+
+	text-align: center;
+	background-color: white;
+	overflow: hidden;
+	@include transition(height 0.4s $ease-in-out-quint);
+
+	ul {
+		padding: 10px;
+	}
+	li {
+		@include serif;
+		font-size: 24pt;
+		@include top-bottom-margin($large);
+		text-transform: uppercase;
+	}
+
+	a {
+		color: $grey;
+		text-decoration: none;
+
+		@include transition(color 0.2s);
+
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+header.closed {
+	height: 75px;
+
+	.footer {
+		opacity: 0
+	}
+}
+
+header.open {
+	height: 100%;
+	
+	.footer {
+		opacity: 1;
+	}
+}
+
+.header-container {
+	height: calc(100% - 150px);
+}
+
+.burger-house {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 25px;
+	margin: 25px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.burger {
+	position: absolute;
+	user-select: none;
+	@include burger(25px, 3px, 5px, $black);
+}
+
+.burger-closed > .burger {
+	@include burger-to-cross;
+}
+
+.social {
+	font-size: 16	pt;
+	padding: 15px;
+	hr {
+		width: $hr-width;
+		height: 1px;
+		border: 0;
+		background-color: $black;
+	}
+}
+
+.footer {
+	
+	height: 75px;
+	line-height: 75px;
+
+	@include transition(all 0.2s);
+
+	hr {
+		display: inline-block;
+		height: 1px;
+		width: $hr-width;
+		background-color: $black;
+		border: 0;
+		margin-left: 15px;
+		margin-right: 15px;
+
+		@include media($mobile) {
+			width: 50px;
+		}
+	}
+
+	h1 {
+		@include serif;
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 18pt;
+
+		@include media($mobile) {
+			font-size: 14pt;
+		}
+	}
+}
+
+.open > .footer {
+	@include transition(all 0.3s);	
+	@include transition-delay(0.2s);
+}
+
+.title {
+	@include serif;
+	color: $black;
+	font-size: 32pt;
+	height: 75px;
+	line-height: 75px;
+	text-transform: uppercase;
+
+	@include transition(font-size 0.2s);
+
+	@include media($mobile) {
+		font-size: 18pt;
+	}
+}
+
+.form-label {
+	@include serif;
+	font-weight: bold;
+	color: $black;
+	font-size: 16pt;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.form-input {
+
+	width: 100%;
+	height: 40px;
+	font-size: 16pt;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.6);
+	margin-bottom: 15px;
+
+	@include serif;
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(0,0,0,0.0);;
+
+	@include transition(all 0.5s);
+
+	&:focus {
+		outline: none;
+		border-color: $blue;
+	}
+}
+
+.error { 
+	border-color: $red;
+	color: $red;
+}
+
+.req {
+	&:after {
+		margin-left: 5px;
+		content: "(Required)";
+		color: $red;
+		font-size: 12pt;
+	}
+}
+
+textarea.form-input {
+	height: 100px;
+	resize: none;	
+}
+
+.small-rule {
+	// display: inline-block;
+	width: 100px;
+	height: 1px;
+	border: 0;
+	color: $black;
+	background-color: $black;
+	margin-bottom: 25px;
+
+	@include transition(width 0.2s);
+
+	@include media($mobile) {
+		width: 65px;
+	}
+}
+
+.button {
+	@include top-bottom-margin();
+	@include serif;
+	@include transition(all 0.2s $ease-in-out-quint);
+	text-transform:  uppercase;
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	font-size: 18pt;
+	background-color: $blue;
+	border: none;
+	color: white;
+	cursor: pointer;
+
+	&:focus {
+		outline: 0;
+	}
+
+}
+
+.sec {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.section-title {
+	@include serif;
+	font-size: 24pt;
+	text-align: center;
+	display: inline-block;
+	width: auto;
+	margin-left: $small;
+	margin-right: $small;
+
+	@include transition(all 0.2s);
+
+	@include media($mobile) {
+		font-size: 20pt;
+	}
+
+}
+
+.contact-social {
+	display: block;
+	margin-bottom: 15px;
+	margin-top: 15px
+}
+
+.contact-subtitle {
+	text-align: center;
+	@include sans-bold;
+	font-size: 18pt;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+
+.social-label {
+	@include sans;
+	font-size: 16pt;
+	display: inline-block;
+	margin-left: 15px;
+
+}
+
+.social-bubble {
+	display: inline-block;
+	background-color: $red;
+	width: 45px;
+	height: 45px;
+	border-radius: 22.5px;
+	line-height: 45px;
+	text-align: center;
+	color: white;
+	@include sans-bold;
+}
+
+/* Images
+*/
+
+.about-img {
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	border-radius: 200px;
+	background-color: $black;
+	float: right;
+
+	@include media($little)	 {
+		float: none;
+	}
+}
+
+.center {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.tiny-head {
+	height: 150px;
+	width: 150px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 75px;
+	background-color: $blue;
+
+}

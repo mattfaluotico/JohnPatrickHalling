@@ -1,0 +1,51 @@
+// Media sizes
+$mobile: max-width 480px;
+$little: max-width 800px;
+
+// Margins and Sizes
+$small: 10px;
+$large: 15px;
+$hr-width: 100px;
+
+// Colors
+$black: #272822;
+$blue: #63A7CD;
+$grey: #D7D6DC;
+$red: #713741;
+
+$gfont: 'Lato';
+
+@mixin border() {
+	border-radius: 2px;
+}
+
+@mixin top-bottom-margin($size: $small) {
+	margin-top: $size;
+	margin-bottom: $size;
+}
+
+@mixin serif {
+	font-family: Perpetua;
+}
+
+
+@mixin sans {
+	font-family: $gfont, sans-serif;
+	font-weight: 300;
+}
+
+@mixin sans-normal {
+	font-family: $gfont, sans-serif;
+	font-weight: 400;
+}
+
+@mixin sans-bold {
+	font-family: $gfont, sans-serif;
+	font-weight: 700;
+}
+
+
+@function clear() {
+	@return rgba(0,0,0,0);
+}
+
