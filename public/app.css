@@ -249,8 +249,10 @@ header.open {
   animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }
 
 .social {
-  font-size: 16	pt;
   padding: 15px; }
+  .social a {
+    font-size: 20pt;
+    padding: 5px; }
   .social hr {
     width: 100px;
     height: 1px;
@@ -455,6 +457,9 @@ textarea.form-input {
   border-radius: 75px;
   background-color: #63A7CD; }
 
+.contact-tag {
+  text-align: center; }
+
 .date {
   position: absolute;
   top: calc(50% - 37.5px);
@@ -513,7 +518,7 @@ textarea.form-input {
   font-size: 18pt; }
 
 .news-content {
-  font-size: 12pt; }
+  font-size: 14pt; }
 
 .entry {
   position: relative;

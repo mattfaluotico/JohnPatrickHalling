@@ -1,14 +1,14 @@
 [	
 	{
-		"day"   : "21",
+		"day"   : "16",
 		"month" : "FEB",
-		"title"  : "__title__",
-		"content": "__content__"
+		"title"  : "Introducing the new website",
+		"content": "How do you like it? This was built (with love) by Matt Faluotico."
 	},
 	{
-		"day"   : "21",
+		"day"   : "14",
 		"month" : "FEB",
-		"title"  : "__title__",
-		"content": "__content__"
+		"title"  : "Happy Valentines Day",
+		"content": "Who wants to be my valentine?"
 	}
 ]
