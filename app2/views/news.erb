@@ -5,5 +5,7 @@
 	</div>
 
 	<!-- Entries -->
-	<%= erb :'_nentry' %>
+	<% @news.each do |event| %>
+		<%= get_news(event) %>
+	<% end %>
 </div>

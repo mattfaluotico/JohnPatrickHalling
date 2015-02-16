@@ -5,7 +5,7 @@
 	</div>
 
 	<!-- Entries -->
-	<%= erb :'_nentry' %>
-	<%= erb :'_nentry' %>
-	<%= erb :'_nentry' %>
+	<% @shows.each do |event| %>
+		<%= get_show(event) %>
+	<% end %>
 </div>
