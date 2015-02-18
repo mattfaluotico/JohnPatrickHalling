@@ -102,7 +102,6 @@ section {
   display: block;
   margin-right: 2.84259%;
   width: 48.57871%;
-  display: block;
   margin-top: 20px;
   margin-bottom: 20px; }
   .sub:last-child {
@@ -117,6 +116,43 @@ section {
       width: 100%;
       display: block; }
       .sub:last-child {
+        margin-right: 0; } }
+
+.mini {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 31.43828%; }
+  .mini:last-child {
+    margin-right: 0; }
+  .mini:nth-child(3n) {
+    margin-right: 0; }
+  .mini:nth-child(3n+1) {
+    clear: left; }
+  @media screen and (max-width: 800px) {
+    .mini {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 48.57871%; }
+      .mini:nth-child(3n) {
+        margin-right: 2.35765%; }
+      .mini:nth-child(3n+1) {
+        clear: none; }
+      .mini:last-child {
+        margin-right: 0; }
+      .mini:nth-child(2n) {
+        margin-right: 0; }
+      .mini:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (max-width: 480px) {
+    .mini {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%;
+      margin-right: 0; }
+      .mini:last-child {
         margin-right: 0; } }
 
 body {
@@ -459,6 +495,10 @@ textarea.form-input {
 
 .contact-tag {
   text-align: center; }
+
+.photo {
+  width: 100%;
+  height: auto; }
 
 .date {
   position: absolute;

@@ -1,3 +1,8 @@
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
 section {
 	@include outer-container();
 }
@@ -13,7 +18,6 @@ section {
 
 .sub {
 	@include span-columns(5 of 10);
-	display: block;
 	@include omega(2);
 
 	margin-top: 20px;
@@ -22,5 +26,22 @@ section {
 	@include media($little) {
 		@include span-columns(10 of 10);
 		display: block;
+	}
+}
+
+
+.mini {
+	@include span-columns(10/3 of 10);
+	@include omega(3n);
+
+	@include media($little) {
+		@include omega-reset(3n);
+		@include span-columns(5 of 10);
+		@include omega(2n);
+	}
+
+	@include media($mobile) {
+		@include span-columns(10 of 10);
+		@include omega();
 	}
 }
