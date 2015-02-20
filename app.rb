@@ -25,14 +25,14 @@ post '/contact' do
   puts "pretend email sent"
   name = params[:name]
   from = params[:email]
-  subj =  params[:subject]
+  phone =  params[:phone]
   cont = params[:content]
 
   email = Mail.new do
-      body  cont
+      body  "#{cont} + ||| Contact at #{phone}}"
       from  from
-      subject subj
-      to    'johnpatrickhalling@yahoo.com'
+      subject "Message from #{name}"
+      to    'matt.faluotico+devtest@gmail.com'
   end
 
   puts email.to_s

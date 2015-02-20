@@ -6,8 +6,22 @@ jQuery(document).ready(function($) {
 	var $header = $("header");
 
 	var $button= $("#send").click(function(event) {
-		sendEmail();
+		if (canSendEmail()) {
+			sendEmail();
+		} else {
+			inputError();
+		}
 	});
+
+	$("#email").focus(function(event) {
+		$(this).removeClass('error');
+	}).blur(function(event) {
+		if (!canSendEmail()) {
+			inputError();
+		}
+	});;
+
+
 
 	var $menu = $("#menu").click(function(event) {
 		if( $(this).hasClass('burger-closed')) {
@@ -42,6 +56,26 @@ jQuery(document).ready(function($) {
 
 });
 
+function canSendEmail() {
+	var email = $("#email").val();
+	var emailRegex = /[a-zA-Z0-9.+%-]+[@][a-zA-Z0-9.+%-]+[.][A-Za-z]+/
+	return email.match(emailRegex);
+
+}
+
+function inputError() {
+	$("#email").addClass('error');
+}
+
 function sendEmail() {
-	alert("sent");
+	$.post('/contact', 
+	{
+		email: $("#email").val(),
+		subject: $("#subject").val(),
+		phone: $("#number").val(),
+		content: $("#message").val()
+	}, function(data) {
+		alert("John will get back to you soon!")
+		
+	});
 }
