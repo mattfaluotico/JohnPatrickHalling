@@ -2,6 +2,7 @@ require 'sinatra'
 require 'json'
 require 'mail'
 require './read_json'
+
 # -----------------------------------
 # JohnPatrickHalling.com
 # Copyright (c) 2014 | Matt Faluotico
@@ -31,7 +32,7 @@ post '/contact' do
       body  cont
       from  from
       subject subj
-      to    'matt.faluotico+devtest@gmail.com'
+      to    'johnpatrickhalling@yahoo.com'
   end
 
   puts email.to_s
