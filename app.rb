@@ -31,8 +31,8 @@ post '/contact' do
   email = Mail.new do
       body  "#{cont} + ||| Contact at #{phone}}"
       from  from
-      subject "Message from #{name}"
-      to    'matt.faluotico+devtest@gmail.com'
+      subject "Music related message from #{name}"
+      to    'johnpatrickhalling@yahoo.com'
   end
 
   puts email.to_s
