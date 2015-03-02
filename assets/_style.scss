@@ -74,6 +74,10 @@ header.open {
 	}
 }
 
+.bold {
+	font-weight: 400;
+}
+
 .header-container {
 	height: calc(100% - 150px);
 }
@@ -316,6 +320,7 @@ textarea.form-input {
 .about-img {
 	max-width: 400px;
 	width: 100%;
+	margin: 15px;
 	height: auto;
 	border-radius: 200px;
 	background-color: $black;
@@ -344,4 +349,8 @@ textarea.form-input {
 
 .contact-tag {
 	text-align: center;
+}
+
+.photo {
+	width: 100%;
 }
