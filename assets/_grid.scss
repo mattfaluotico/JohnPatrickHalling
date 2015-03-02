@@ -31,6 +31,11 @@ section {
 
 
 .mini {
+
+	margin-top: 20px;
+	overflow: hidden;
+	height: 300px;
+
 	@include span-columns(10/3 of 10);
 	@include omega(3n);
 

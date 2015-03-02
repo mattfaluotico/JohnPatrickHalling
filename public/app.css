@@ -119,6 +119,9 @@ section {
         margin-right: 0; } }
 
 .mini {
+  margin-top: 20px;
+  overflow: hidden;
+  height: 300px;
   float: left;
   display: block;
   margin-right: 2.84259%;
@@ -220,6 +223,9 @@ header.open {
   height: 100%; }
   header.open .footer {
     opacity: 1; }
+
+.bold {
+  font-weight: 400; }
 
 .header-container {
   height: calc(100% - 150px); }
@@ -472,6 +478,7 @@ textarea.form-input {
 .about-img {
   max-width: 400px;
   width: 100%;
+  margin: 15px;
   height: auto;
   border-radius: 200px;
   background-color: #272822;
@@ -497,8 +504,7 @@ textarea.form-input {
   text-align: center; }
 
 .photo {
-  width: 100%;
-  height: auto; }
+  width: 100%; }
 
 .date {
   position: absolute;
