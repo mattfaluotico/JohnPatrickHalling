@@ -9,7 +9,7 @@ body {
 	color: $black;
 	@include selection {
 	  background-color: $blue;
-}
+	}
 }
 
 p {
@@ -304,6 +304,7 @@ textarea.form-input {
 
 .social-bubble {
 	display: inline-block;
+	cursor: pointer;
 	background-color: $red;
 	width: 45px;
 	height: 45px;
