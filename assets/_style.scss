@@ -1,6 +1,6 @@
 body {
 	@include sans-normal;
-	background: url('/img/ac.jpg');
+	background: url('/img/ac_l.jpg');
 	background-position: 0;
 	background-position: no-repeat;
 	background-size: cover;
@@ -56,6 +56,10 @@ header {
 			color: $blue;
 		}
 	}
+}
+
+iframe {
+	margin: 15px;
 }
 
 header.closed {
@@ -313,6 +317,18 @@ textarea.form-input {
 	text-align: center;
 	color: white;
 	@include sans-bold;
+}
+
+.enter {
+	@include serif;
+	font-size: 32pt;
+	color: white;
+	text-decoration: none;
+	display: block;
+
+	&:hover {
+		color: $black;
+	}
 }
 
 /* Images
