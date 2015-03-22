@@ -6,5 +6,10 @@
 	<div class="news">
 			<h4 class="news-title"><%= @title %></h4>
 			<p class="news-content"><%= @content %></p>
+			<% if @link %>
+			<p class="more">
+				<a href="<%= @link %>"><%= @link_title %></a>
+			</p>
+			<% end %>
 	</div>
 </div>

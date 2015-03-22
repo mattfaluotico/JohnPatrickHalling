@@ -54,6 +54,8 @@ def get_news(event)
   @month   = event["month"]
   @title   = event["title"]
   @content = event["content"]
+  @link    = event["link"]
+  @link_title    = event["link-title"]
   erb :_nentry
 end
 

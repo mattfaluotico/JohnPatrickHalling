@@ -3,7 +3,9 @@
 		"day"   : "16",
 		"month" : "FEB",
 		"title"  : "Introducing the new website",
-		"content": "How do you like it? This was built (with love) by Matt Faluotico."
+		"content": "How do you like it? This was built (with love) by Matt Faluotico.",
+		"link" : "https://readability.com/reading-list",
+		"link-title" : "See more"
 	},
 	{
 		"day"   : "14",
