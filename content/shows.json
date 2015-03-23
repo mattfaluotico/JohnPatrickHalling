@@ -1,23 +1,16 @@
 [	
 	{
-		"day"        : "4",
+		"day"        : "28",
 		"month"			 : "MAR",
-		"location"   : "Brent Kirby’s 10x3",
-		"description": "Brother’s Lounge Wine Bar | Cleveland, OH",
-		"Link"       : "__URL"
-	},
-	{
-		"day"        : "6",
-		"month"			 : "MAR",
-		"location"   : "Illuminati 2015 Art Show",
-		"description": "Cultured Coffee Co. | Canton, OH",
+		"location"   : "BOY IN THE WATER CD RELEASE SHOW",
+		"description": "w/ Hive Robbers, Jeff Klemm & The Letters, Cody J. Martin.  The Stone Tavern | Kent, OH",
 		"Link"       : "__URL"
 	},
 	{
 		"day"        : "28",
-		"month"			 : "MAR",
-		"location"   : "Boy in the Water release Party",
-		"description": "w/ Hive Robbers, Cody J. Martin. The Stone Tavern | Kent, OH",
+		"month"			 : "JUNE",
+		"location"   : "The Summer Break Festival",
+		"description": "The Kent Stage | Kent, OH",
 		"Link"       : "__URL"
 	}
 ]

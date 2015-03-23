@@ -1,16 +1,18 @@
 [	
 	{
-		"day"   : "16",
-		"month" : "FEB",
-		"title"  : "Introducing the new website",
-		"content": "How do you like it? This was built (with love) by Matt Faluotico.",
-		"link" : "https://readability.com/reading-list",
-		"link-title" : "See more"
+		"day"   : "21",
+		"month" : "MAR",
+		"title"  : "FREE DOWNLOAD of Misfit Toys",
+		"content": "Hey, folks! Make sure to grab a free download of the song Misfit Toys. We'd love your help singing along at The Stone Tavern next Saturday! ",
+		"link" : "https://jphalling.bandcamp.com",
+		"link-title" : "FREE DOWNLOAD HERE"
 	},
 	{
-		"day"   : "14",
-		"month" : "FEB",
-		"title"  : "Happy Valentines Day",
-		"content": "Who wants to be my valentine?"
+		"day"   : "12",
+		"month" : "MAR",
+		"title"  : "JPH to play The Kent Stage!",
+		"content": "I'm excited to announce that the band and I will be joining a stellar line-up for The Summer Break Festival at the Kent Stage on June 28th, 2015! For more info, follow the festival on twitter, @SummerBreakFest, and check out their latest blog! ",
+		"link" : "http://thesummerbreakfestival.blogspot.com/2015/03/band-announcement-john-patrick-halling.html",
+		"link-title" : "TSBF Band Annoucement: John Patrick Halling"
 	}
 ]
