@@ -1,6 +1,6 @@
 body {
 	@include sans-normal;
-	background: url('/img/ac.jpg');
+	background: url('/img/ac_l.jpg');
 	background-position: 0;
 	background-position: no-repeat;
 	background-size: cover;
@@ -9,8 +9,10 @@ body {
 	color: $black;
 	@include selection {
 	  background-color: $blue;
+	}
 }
-}
+
+
 
 p {
 	@include sans;
@@ -56,6 +58,10 @@ header {
 			color: $blue;
 		}
 	}
+}
+
+iframe {
+	margin: 15px;
 }
 
 header.closed {
@@ -304,6 +310,7 @@ textarea.form-input {
 
 .social-bubble {
 	display: inline-block;
+	cursor: pointer;
 	background-color: $red;
 	width: 45px;
 	height: 45px;
@@ -312,6 +319,18 @@ textarea.form-input {
 	text-align: center;
 	color: white;
 	@include sans-bold;
+}
+
+.enter {
+	@include serif;
+	font-size: 18pt;
+	color: white;
+	text-decoration: none;
+	display: block;
+
+	&:hover {
+		color: $black;
+	}
 }
 
 /* Images
@@ -353,4 +372,10 @@ textarea.form-input {
 
 .photo {
 	width: 100%;
+}
+
+
+.clear {
+	background-color: white;
+	height: 100vh;
 }

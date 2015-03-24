@@ -6,6 +6,7 @@ jQuery(document).ready(function($) {
 	var $header = $("header");
 
 	var $button= $("#send").click(function(event) {
+		event.preventDefault();
 		if (canSendEmail()) {
 			sendEmail();
 		} else {

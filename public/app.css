@@ -45,6 +45,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: "Perpetua";
+  src: url("../fonts/Perpetua.ttf") format("truetype"); }
 /**
  * Burger parts
  *
@@ -161,7 +164,7 @@ section {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  background: url("/img/ac.jpg");
+  background: url("/img/ac_l.jpg");
   background-position: 0;
   background-position: no-repeat;
   background-size: cover;
@@ -200,7 +203,7 @@ header {
   header ul {
     padding: 10px; }
   header li {
-    font-family: Perpetua;
+    font-family: "Perpetua";
     font-size: 24pt;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -213,6 +216,9 @@ header {
     transition: color 0.2s; }
     header a:hover {
       color: #63A7CD; }
+
+iframe {
+  margin: 15px; }
 
 header.closed {
   height: 75px; }
@@ -319,7 +325,7 @@ header.open {
       .footer hr {
         width: 50px; } }
   .footer h1 {
-    font-family: Perpetua;
+    font-family: "Perpetua";
     text-transform: uppercase;
     display: inline-block;
     font-size: 18pt; }
@@ -336,7 +342,7 @@ header.open {
   transition-delay: 0.2s; }
 
 .title {
-  font-family: Perpetua;
+  font-family: "Perpetua";
   color: #272822;
   font-size: 32pt;
   height: 75px;
@@ -350,7 +356,7 @@ header.open {
       font-size: 18pt; } }
 
 .form-label {
-  font-family: Perpetua;
+  font-family: "Perpetua";
   font-weight: bold;
   color: #272822;
   font-size: 16pt;
@@ -364,7 +370,7 @@ header.open {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.6);
   margin-bottom: 15px;
-  font-family: Perpetua;
+  font-family: "Perpetua";
   border-style: solid;
   border-width: 2px;
   border-color: transparent;
@@ -406,7 +412,7 @@ textarea.form-input {
 .button {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Perpetua;
+  font-family: "Perpetua";
   -webkit-transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
   -moz-transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
   transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
@@ -427,7 +433,7 @@ textarea.form-input {
   margin-top: 100px; }
 
 .section-title {
-  font-family: Perpetua;
+  font-family: "Perpetua";
   font-size: 24pt;
   text-align: center;
   display: inline-block;
@@ -463,6 +469,7 @@ textarea.form-input {
 
 .social-bubble {
   display: inline-block;
+  cursor: pointer;
   background-color: #713741;
   width: 45px;
   height: 45px;
@@ -472,6 +479,15 @@ textarea.form-input {
   color: white;
   font-family: "Lato", sans-serif;
   font-weight: 700; }
+
+.enter {
+  font-family: "Perpetua";
+  font-size: 18pt;
+  color: white;
+  text-decoration: none;
+  display: block; }
+  .enter:hover {
+    color: #272822; }
 
 /* Images
 */
@@ -505,6 +521,10 @@ textarea.form-input {
 
 .photo {
   width: 100%; }
+
+.clear {
+  background-color: white;
+  height: 100vh; }
 
 .date {
   position: absolute;
@@ -544,7 +564,7 @@ textarea.form-input {
 
 .d-month {
   position: relative;
-  font-family: Perpetua;
+  font-family: "Perpetua";
   display: block;
   width: 100%;
   height: 30px; }
@@ -560,7 +580,7 @@ textarea.form-input {
       margin-left: 50px; } }
 
 .news-title {
-  font-family: Perpetua;
+  font-family: "Perpetua";
   font-size: 18pt; }
 
 .news-content {
