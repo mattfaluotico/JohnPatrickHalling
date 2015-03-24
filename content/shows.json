@@ -3,14 +3,12 @@
 		"day"        : "28",
 		"month"			 : "MAR",
 		"location"   : "BOY IN THE WATER CD RELEASE SHOW",
-		"description": "w/ Hive Robbers, Jeff Klemm & The Letters, Cody J. Martin.  The Stone Tavern | Kent, OH",
-		"Link"       : "__URL"
+		"description": "w/ Hive Robbers, Jeff Klemm & The Letters, Cody J. Martin.  The Stone Tavern | Kent, OH"
 	},
 	{
 		"day"        : "28",
 		"month"			 : "JUNE",
 		"location"   : "The Summer Break Festival",
-		"description": "The Kent Stage | Kent, OH",
-		"Link"       : "__URL"
+		"description": "The Kent Stage | Kent, OH"
 	}
 ]

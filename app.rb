@@ -64,5 +64,6 @@ def get_show(event)
   @month   = event["month"]
   @title   = event["location"]
   @content = event["description"]
+  @link = nil
   erb :_nentry
-end
+end 
