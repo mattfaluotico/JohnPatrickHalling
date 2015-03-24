@@ -496,7 +496,6 @@ textarea.form-input {
   width: 100%;
   margin: 15px;
   height: auto;
-  border-radius: 200px;
   background-color: #272822;
   float: right; }
   @media screen and (max-width: 800px) {
