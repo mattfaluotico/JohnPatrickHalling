@@ -482,12 +482,21 @@ textarea.form-input {
 
 .enter {
   font-family: "Perpetua";
-  font-size: 18pt;
+  font-size: 20pt;
   color: white;
   text-decoration: none;
   display: block; }
   .enter:hover {
     color: #272822; }
+
+.enter2 {
+  font-family: "Perpetua";
+  font-size: 20pt;
+  color: #713741;
+  text-decoration: none;
+  display: block; }
+  .enter:hover {
+    color: white; }
 
 /* Images
 */
