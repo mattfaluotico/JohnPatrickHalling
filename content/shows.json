@@ -2,13 +2,31 @@
 	{
 		"day"        : "18",
 		"month"			 : "APR",
-		"location"   : "Voices in the Valley",
-		"description": "w/ Brent Kirby & His Luck The G.A.R. Hall | Peninsula, OH"
+		"location"   : "The G.A.R. Hall | Peninsula, OH",
+		"description": "w/ Brent Kirby & His Luck"
+	},
+	{
+		"day"        : "21",
+		"month"			 : "APR",
+		"location"   : "The Loft | Kent, OH",
+		"description": "*Acoustic*"
+	},
+	{
+		"day"        : "08",
+		"month"			 : "MAY",
+		"location"   : "Stone Tavern | Kent, OH",
+		"description": "w/ Poor Lazurus, Great Grandpa Bee Bee"
+	},
+	{
+		"day"        : "20",
+		"month"			 : "MAY",
+		"location"   : "Karma Kafe | Akron, OH",
+		"description": "*Acoustic*"
 	},
 	{
 		"day"        : "28",
 		"month"			 : "JUNE",
-		"location"   : "The Summer Break Festival",
-		"description": "The Kent Stage | Kent, OH"
+		"location"   : "The Kent Stage | Kent, OH",
+		"description": "The Summer Break Festival w/ Chil, Instead of Sleeping, NWFP + MORE!"
 	}
 ]

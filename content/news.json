@@ -1,11 +1,19 @@
 [	
 	{
+		"day"   : "6",
+		"month" : "APR",
+		"title"  : "Boy in the Water: Now Available on Spotify!",
+		"content": "Hey, folks! I've got some good news...You can new stream my new album, Boy in the Water, on Spotify!",
+		"link" : "https://open.spotify.com/album/5E56gLo9SenruagXefXhPc",
+		"link-title" : "LISTEN"
+	},
+	{
 		"day"   : "31",
 		"month" : "MAR",
-		"title"  : "Boy in the Water OUT NOW!",
+		"title"  : "Boy in the Water: OUT NOW on iTunes!",
 		"content": "Thrilled to announce that my new record, Boy in the Water, is now available for digital download! I hope you have as much fun listening to it as I had making it. Thank you so much for all of the continued support... Many more exciting things to come!",
 		"link" : "https://itunes.apple.com/us/album/boy-in-the-water/id979967814",
-		"link-title" : "Now on iTunes"
+		"link-title" : "GET IT NOW"
 	},
 	{
 		"day"   : "12",
