@@ -1,26 +1,26 @@
 [	
 	{
-		"day"   : "6",
-		"month" : "APR",
-		"title"  : "Boy in the Water: Now Available on Spotify!",
-		"content": "Hey, folks! I've got some good news...You can now stream my new album, Boy in the Water, on Spotify!",
-		"link" : "https://open.spotify.com/album/5E56gLo9SenruagXefXhPc",
-		"link-title" : "LISTEN"
+		"day"   : "28",
+		"month" : "MAY",
+		"title"  : "Boy in the Water: Album Review by The Equal Ground",
+		"content": " '...an interesting Americana folk-rock sound that evokes the more countryside of Ryan Adams and some of the early albums of M. Ward.' ",
+		"link" : "http://www.theequalground.com/indie-music-album-reviews/john-patrick-halling-boy-in-the-water",
+		"link-title" : "READ MORE"
 	},
 	{
-		"day"   : "31",
-		"month" : "MAR",
-		"title"  : "Boy in the Water: OUT NOW on iTunes!",
-		"content": "Thrilled to announce that my new record, Boy in the Water, is now available for digital download! I hope you have as much fun listening to it as I had making it. Thank you so much for all of the continued support... Many more exciting things to come!",
-		"link" : "https://itunes.apple.com/us/album/boy-in-the-water/id979967814",
-		"link-title" : "GET IT NOW"
+		"day"   : "27",
+		"month" : "MAY",
+		"title"  : "Pre-Sale tickets for Summer Break Festival now available!",
+		"content": "John Patrick Halling & The Outside Voices make their Kent Stage debut on June 28th as the opening act for the inaugural Summer Break Festival in Kent, OH. Pre-sale tickets are avaialble for $10. Contact JPH via e-mail to reserve your ticket (johnpatrickhalling@yahoo.com) ",
+		"link" : "",
+		"link-title" : ""
 	},
 	{
-		"day"   : "12",
-		"month" : "MAR",
-		"title"  : "JPH to play The Kent Stage!",
-		"content": "I'm excited to announce that the band and I will be joining a stellar line-up for The Summer Break Festival at the Kent Stage on June 28th, 2015! For more info, follow the festival on twitter, @SummerBreakFest, and check out their latest blog! ",
-		"link" : "http://thesummerbreakfestival.blogspot.com/2015/03/band-announcement-john-patrick-halling.html",
-		"link-title" : "TSBF Band Annoucement: John Patrick Halling"
+		"day"   : "20",
+		"month" : "MAY",
+		"title"  : "U.S. Acoustic Tour to be announced soon",
+		"content": "Hey, folks! Just wanted to sign in and let you know I've been hard at work preparing a cross-country acoustic tour this summer. I'll be in a lot of new cities/states and I couldn't be more excited! More information is coming soon. Until then, sit tight, and thank you so much for your continued support. For more news/updates follow the link to my official facebook page! ",
+		"link" : "http://www.facebook.com/JPHallingMusic",
+		"link-title" : "LIKE JPH on Facebook"
 	}
 ]

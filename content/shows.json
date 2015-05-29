@@ -1,32 +1,18 @@
 [	
 	{
-		"day"        : "18",
-		"month"			 : "APR",
-		"location"   : "The G.A.R. Hall | Peninsula, OH",
-		"description": "w/ Brent Kirby & His Luck"
-	},
-	{
-		"day"        : "21",
-		"month"			 : "APR",
-		"location"   : "The Loft | Kent, OH",
-		"description": "*Acoustic*"
-	},
-	{
-		"day"        : "08",
-		"month"			 : "MAY",
-		"location"   : "Stone Tavern | Kent, OH",
-		"description": "w/ Poor Lazarus, Great Grandpa Bee Bee"
-	},
-	{
-		"day"        : "20",
-		"month"			 : "MAY",
-		"location"   : "Karma Kafe | Akron, OH",
-		"description": "*Acoustic*"
-	},
-	{
 		"day"        : "28",
 		"month"			 : "JUNE",
 		"location"   : "The Kent Stage | Kent, OH",
-		"description": "The Summer Break Festival w/ Chil, Instead of Sleeping, NWFP + MORE!"
+		"description": "The Summer Break Festival w/ Chil, Instead of Sleeping, NWFP + MORE!",
+		"link"       : "https://www.facebook.com/events/1451115145203288",
+		"link-title" : "RSVP"
+	},
+	{
+		"day"        : "01",
+		"month"			 : "JUL",
+		"location"   : "Tear-Ez | Akron, OH",
+		"description": "JPH takes the Acoustic Stage (9-10pm) for the monthly #AkronMusicScene showcase hosted by Something Completely Different",
+		"link"       : "https://www.facebook.com/events/473135939517953",
+		"link-title" : "RSVP"
 	}
 ]
