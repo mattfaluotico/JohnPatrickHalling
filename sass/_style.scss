@@ -1,0 +1,53 @@
+#title {
+	background-color: red;
+}
+#about {
+	background-color: blue;
+}
+#tour-dates {
+	background-color: purple;
+}
+#music {
+	background-color: green;
+}
+#videos {
+	background-color: #33b5e5;
+}
+#blog {
+	background-color: red;
+}
+
+nav {
+	background-color: white;
+}
+
+nav div {
+	float: left;
+	display: inline-block;
+
+	h1 {
+		display: inline-block;
+	}
+}
+
+nav ul li {
+	float: left;
+
+	a {
+		@include sans(12pt,200);
+		line-height: 18pt;
+		text-decoration: none;
+	}
+}
+
+.main-title {
+
+}
+
+.nav-title {
+	@include sans(18pt,200);
+}
+
+.nav-title.visible {
+
+}

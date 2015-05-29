@@ -1,0 +1,11 @@
+$black: #333333;
+
+@mixin sans($size, $weight) {
+	font-family: Helvetica-Neue, Helvetica, sans-serif;
+	font-weight: $weight;
+	font-size: $size;
+}
+
+@mixin read {
+	@include sans(14pt,300);
+}

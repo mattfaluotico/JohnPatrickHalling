@@ -1,0 +1,98 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+a:hover {
+  text-decoration: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: Helvetica,Arial,Sans-Serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: block; }
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px; }
+
+.content {
+  width: 80%;
+  margin: auto; }
+
+.nav {
+  position: relative; }
+
+#title {
+  background-color: red; }
+
+#about {
+  background-color: blue; }
+
+#tour-dates {
+  background-color: purple; }
+
+#music {
+  background-color: green; }
+
+#videos {
+  background-color: #33b5e5; }
+
+#blog {
+  background-color: red; }
+
+nav {
+  background-color: white; }
+
+nav div {
+  float: left;
+  display: inline-block; }
+  nav div h1 {
+    display: inline-block; }
+
+nav ul li {
+  float: left; }
+  nav ul li a {
+    font-family: Helvetica-Neue, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 12pt;
+    line-height: 18pt;
+    text-decoration: none; }
+
+.nav-title {
+  font-family: Helvetica-Neue, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 18pt; }
+
+/*# sourceMappingURL=app.css.map */
