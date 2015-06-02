@@ -1,6 +1,7 @@
 #title {
-	background-image: url('../images/cover.png');
-	background-position: bottom right;
+	background-image: url('../images/cover.jpg');
+	background-position: bottom left;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #D9DADC;
 }
@@ -45,13 +46,13 @@ nav ul li {
 	}
 }
 
-.title-item {
-	width: 50%;
-	margin: 25px;
-}
-
 .main-title {
 	@include sans(52pt,600);
+	float: right;
+	width: 50%;
+	text-transform: capitalize;
+	text-align: right;
+	color: white;
 }
 
 .nav-title {

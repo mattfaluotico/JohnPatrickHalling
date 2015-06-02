@@ -74,8 +74,9 @@ nav {
   float: right; }
 
 #title {
-  background-image: url("../images/cover.png");
-  background-position: bottom right;
+  background-image: url("../images/cover.jpg");
+  background-position: bottom left;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #D9DADC; }
 
@@ -117,14 +118,15 @@ nav ul li {
     padding-left: 10px;
     padding-right: 10px; }
 
-.title-item {
-  width: 50%;
-  margin: 25px; }
-
 .main-title {
   font-family: Roboto Slab, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 52pt; }
+  font-size: 52pt;
+  float: right;
+  width: 50%;
+  text-transform: capitalize;
+  text-align: right;
+  color: white; }
 
 .nav-title {
   font-family: Roboto Slab, Helvetica, sans-serif;
