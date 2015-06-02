@@ -17,37 +17,40 @@
 	background-color: red;
 }
 
-nav {
-	background-color: white;
+a {
+	@include transition(all 0.2s);
+	&:hover {
+		color: $hover;
+	}
 }
 
-nav div {
-	float: left;
-	display: inline-block;
-
-	h1 {
-		display: inline-block;
-	}
+nav {
+	background-color: white;
 }
 
 nav ul li {
 	float: left;
 
 	a {
-		@include sans(12pt,200);
+		color: $black;
+		@include sans(12pt,500);
 		line-height: 18pt;
 		text-decoration: none;
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
-.main-title {
+.title-item {
+	width: 50%;
+	margin: 25px;
+}
 
+.main-title {
+	@include sans(32pt,600);
 }
 
 .nav-title {
 	@include sans(18pt,200);
-}
-
-.nav-title.visible {
-
 }

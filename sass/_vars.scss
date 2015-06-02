@@ -1,4 +1,11 @@
+// colors
+
 $black: #333333;
+$hover: #33b5e5;
+
+// screen sizes
+
+$mobile: 345px;
 
 @mixin sans($size, $weight) {
 	font-family: Helvetica-Neue, Helvetica, sans-serif;
