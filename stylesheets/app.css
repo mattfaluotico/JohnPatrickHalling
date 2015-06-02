@@ -74,7 +74,10 @@ nav {
   float: right; }
 
 #title {
-  background-color: red; }
+  background-image: url("../images/cover.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-color: #D9DADC; }
 
 #about {
   background-color: blue; }
@@ -105,7 +108,7 @@ nav ul li {
   float: left; }
   nav ul li a {
     color: #333333;
-    font-family: Helvetica-Neue, Helvetica, sans-serif;
+    font-family: Roboto Slab, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 12pt;
     line-height: 18pt;
@@ -119,12 +122,12 @@ nav ul li {
   margin: 25px; }
 
 .main-title {
-  font-family: Helvetica-Neue, Helvetica, sans-serif;
+  font-family: Roboto Slab, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 32pt; }
+  font-size: 52pt; }
 
 .nav-title {
-  font-family: Helvetica-Neue, Helvetica, sans-serif;
+  font-family: Roboto Slab, Helvetica, sans-serif;
   font-weight: 200;
   font-size: 18pt; }
 

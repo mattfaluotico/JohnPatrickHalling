@@ -1,5 +1,8 @@
 #title {
-	background-color: red;
+	background-image: url('../images/cover.png');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-color: #D9DADC;
 }
 #about {
 	background-color: blue;
@@ -48,7 +51,7 @@ nav ul li {
 }
 
 .main-title {
-	@include sans(32pt,600);
+	@include sans(52pt,600);
 }
 
 .nav-title {
