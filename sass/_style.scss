@@ -34,6 +34,7 @@ nav {
 
 nav ul li {
 	float: left;
+
 	a {
 		color: $black;
 		@include sans(12pt,500);
@@ -45,6 +46,10 @@ nav ul li {
 
 .right ul li a {
 	padding-left: 20px;
+	@include media($mobile) {
+		padding-left: 0;
+		padding-right: 20px;
+	};
 }
 
 .left ul li a {
@@ -68,8 +73,12 @@ nav ul li {
 
 .nav-title {
 
-	display: none;
+	h1 {
+		@include sans(13pt, 600);
+		line-height: 18pt;
+	}
 
+	display: none;
 	@include media($mobile) {
 		display: block;;
 	}

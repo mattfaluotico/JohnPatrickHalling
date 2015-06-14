@@ -27,7 +27,7 @@ nav {
 .left {
 	float: left;
 	display: inline-block;
-	
+
 	@include media ($little-screen) {
 		float: none;
 	};
