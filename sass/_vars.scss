@@ -1,11 +1,10 @@
 // colors
-
 $black: #333333;
 $hover: #33b5e5;
 
 // screen sizes
-
-$mobile: 345px;
+$mobile: max-width 480px;
+$little-screen: max-width 900px;
 
 @mixin sans($size, $weight) {
 	font-family: Roboto Slab, Helvetica, sans-serif;
@@ -14,5 +13,7 @@ $mobile: 345px;
 }
 
 @mixin read {
-	@include sans(14pt,300);
+	font-family: Sweden Sans, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 14;
 }

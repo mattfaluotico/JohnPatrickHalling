@@ -65,13 +65,25 @@ nav {
 .content {
   width: 80%;
   max-width: 986px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: block; }
+  @media screen and (max-width: 480px) {
+    .content {
+      width: 100%; } }
 
 .left {
-  float: left; }
+  float: left;
+  display: inline-block; }
+  @media screen and (max-width: 900px) {
+    .left {
+      float: none; } }
 
 .right {
-  float: right; }
+  float: right;
+  display: inline-block; }
+  @media screen and (max-width: 900px) {
+    .right {
+      float: none; } }
 
 #title {
   background-image: url("../images/cover.jpg");
@@ -114,9 +126,13 @@ nav ul li {
     font-size: 12pt;
     line-height: 18pt;
     text-decoration: none;
-    display: block;
-    padding-left: 10px;
-    padding-right: 10px; }
+    display: block; }
+
+.right ul li a {
+  padding-left: 20px; }
+
+.left ul li a {
+  padding-right: 20px; }
 
 .main-title {
   font-family: Roboto Slab, Helvetica, sans-serif;
@@ -128,9 +144,14 @@ nav ul li {
   text-align: right;
   color: white; }
 
+@media screen and (max-width: 480px) {
+  .title-info {
+    display: none; } }
+
 .nav-title {
-  font-family: Roboto Slab, Helvetica, sans-serif;
-  font-weight: 200;
-  font-size: 18pt; }
+  display: none; }
+  @media screen and (max-width: 480px) {
+    .nav-title {
+      display: block; } }
 
 /*# sourceMappingURL=app.css.map */
