@@ -1,0 +1,8 @@
+{
+  "name": "johnpatrickhalling",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "1.3.16",
+    "angular-route": "1.3.16"
+  }
+}

@@ -61,6 +61,9 @@ nav {
   top: 0;
   left: 0;
   padding: 10px; }
+  @media screen and (max-width: 480px) {
+    nav {
+      position: absolute; } }
 
 .content {
   width: 80%;
@@ -74,14 +77,14 @@ nav {
 .left {
   float: left;
   display: inline-block; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 768px) {
     .left {
       float: none; } }
 
 .right {
   float: right;
   display: inline-block; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 768px) {
     .right {
       float: none; } }
 
@@ -130,7 +133,7 @@ nav ul li {
 
 .right ul li a {
   padding-left: 20px; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .right ul li a {
       padding-left: 0;
       padding-right: 20px; } }

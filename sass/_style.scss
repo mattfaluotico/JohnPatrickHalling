@@ -45,15 +45,16 @@ nav ul li {
 }
 
 .right ul li a {
-	padding-left: 20px;
-	@include media($mobile) {
+	padding-left: $link-padding;
+
+	@include media($little-screen) {
 		padding-left: 0;
-		padding-right: 20px;
+		padding-right: $link-padding;
 	};
 }
 
 .left ul li a {
-	padding-right: 20px;
+	padding-right: $link-padding;
 }
 
 .main-title {

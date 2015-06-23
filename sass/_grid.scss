@@ -8,6 +8,11 @@ section {
 nav {
 	width: 100%;
 	position: fixed;
+
+	@include media($mobile) {
+		position: absolute;
+	}
+
 	top: 0;
 	left: 0;
 	padding: 10px;

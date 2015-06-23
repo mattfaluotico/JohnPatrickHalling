@@ -1,58 +1,53 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>JPH</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="I am John Patrick Halling">
-	<meta name="viewport" content="width=device-width initial-scale=1">
+<html ng-app='johnpatrickhalling'>
+  <head>
+    <meta charset="utf-8">
+    <title>JPH</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="I am John Patrick Halling">
+    <meta name="viewport" content="width=device-width initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
-</head>
-<body>
-	<nav>
-		<div class="content">
-			<div class="nav-title">
-				<h1 class="title">John Patrick Halling</h1>
-			</div>
-			<div class="left">
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#about">Contact</a></li>
-					<li><a href="#tour">Tour</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="#music">Music</a></li>
-					<li><a href="#videos">Videos</a></li>
-					<li><a href="blog.johnpatrickhalling.com">Blog</a></li>
-				</ul>
-			</div>
-			<div class="right">
-				<ul>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-music"></i></a></li>
-					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section id="title">
-		<div class="content title-info">
-			<h1 class="main-title">JOHN PATRICK HALLING</h1>
-			<h2 class="sub">Boy in the water</h2>
-		</div>
-	</section>
-	<section id="about">
-	</section>
-	<section id="tour">
-	</section>
-	<section id="news">
-	</section>
-	<section id="music">
-	</section>
-	<section id="videos">
-	</section>
-</body>
+    <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="content">
+        <div class="nav-title">
+          <h1 class="title">John Patrick Halling</h1>
+        </div>
+        <div class="left">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">Updates</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#about">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="http://instagram.com/jphalling"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/JPHalling"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/JPHallingMusic"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://itunes.apple.com/us/album/boy-in-the-water/id979967814?uo=4"><i class="fa fa-music"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCUYRHo_dm1EHwKbnFHuipcQ"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://open.spotify.com/artist/5TXODhT3zzRqzDwLFSJmb9"><i class="fa fa-spotify"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div ng-view></div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/Content.Controller.js"></script>
+    <script src="javascript/Blog.Controller.js"></script>
+    <script src="javascript/NotFound.Controller.js"></script>
+
+  </body>
 </html>
