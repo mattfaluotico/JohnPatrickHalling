@@ -58,6 +58,7 @@ section {
 nav {
   width: 100%;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   padding: 10px; }
@@ -170,6 +171,11 @@ body {
   -webkit-animation: fadeIn 0.5s ease-in;
   -moz-animation: fadeIn 0.5s ease-in;
   animation: fadeIn 0.5s ease-in; }
+
+#title {
+  -webkit-animation: fadeIn 0.75s ease-in;
+  -moz-animation: fadeIn 0.75s ease-in;
+  animation: fadeIn 0.75s ease-in; }
 
 @-webkit-keyframes fadeIn {
   from {

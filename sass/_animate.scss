@@ -4,6 +4,10 @@ body {
   @include animation(fadeIn 0.5s ease-in);
 }
 
+#title {
+  @include animation(fadeIn 0.75s ease-in);
+}
+
 @include keyframes(fadeIn) {
   from {
     opacity: 0;
