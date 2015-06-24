@@ -1,0 +1,14 @@
+// Fade in
+
+body {
+  @include animation(fadeIn 0.5s ease-in);
+}
+
+@include keyframes(fadeIn) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
