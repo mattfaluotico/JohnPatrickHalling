@@ -1,9 +1,10 @@
 ; 'use strct';
 
-var john = angular.module('johnpatrickhalling.content', [
-  'ngRoute'
+var app = angular.module('johnpatrickhalling.content', [
+  'ngRoute',
+  'ngSanitize'
 ]);
 
-john.controller('ContentController', [function($scope, $http){
-
-}]);
+app.controller('ContentController', function($scope, $http, Wordpress) {
+  Wordpress.getAbout($scope);
+});

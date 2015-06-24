@@ -1,13 +1,13 @@
 ;'use strict'
 
-var john = angular.module('johnpatrickhalling', [
+var app = angular.module('johnpatrickhalling', [
   'ngRoute',
   'johnpatrickhalling.blog',
   'johnpatrickhalling.content',
   'johnpatrickhalling.notfound'
 ]);
 
-john.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider, $locationProvider) {
 
   $routeProvider
     .when('/', {
