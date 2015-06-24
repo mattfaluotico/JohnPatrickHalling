@@ -124,7 +124,7 @@ nav ul li {
   float: left; }
   nav ul li a {
     color: #333333;
-    font-family: Roboto Slab, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', Helvetica, sans-serif;
     font-weight: 500;
     font-size: 12pt;
     line-height: 18pt;
@@ -142,8 +142,8 @@ nav ul li {
   padding-right: 20px; }
 
 .main-title {
-  font-family: Roboto Slab, Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: 700;
   font-size: 52pt;
   float: right;
   width: 50%;
@@ -158,8 +158,8 @@ nav ul li {
 .nav-title {
   display: none; }
   .nav-title h1 {
-    font-family: Roboto Slab, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: 'Roboto Slab', Helvetica, sans-serif;
+    font-weight: 700;
     font-size: 13pt;
     line-height: 18pt; }
   @media screen and (max-width: 480px) {

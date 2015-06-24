@@ -58,7 +58,7 @@ nav ul li {
 }
 
 .main-title {
-	@include sans(52pt,600);
+	@include sans(52pt,700);
 	float: right;
 	width: 50%;
 	text-transform: capitalize;
@@ -75,7 +75,7 @@ nav ul li {
 .nav-title {
 
 	h1 {
-		@include sans(13pt, 600);
+		@include sans(13pt, 700);
 		line-height: 18pt;
 	}
 
