@@ -50,7 +50,7 @@ function getSpecifc($scope, $http, item) {
     });
 }
 
-funciton getPosts($scope, $http, query) {
+function getPosts($scope, $http, query) {
   $http.get('https://public-api.wordpress.com/rest/v1.1/sites/93818088/posts/' + item.val)
     .success(function(response) {
       var posts = response.posts;
