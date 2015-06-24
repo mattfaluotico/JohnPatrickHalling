@@ -3,8 +3,7 @@
 var app = angular.module('johnpatrickhalling', [
   'ngRoute',
   'johnpatrickhalling.blog',
-  'johnpatrickhalling.content',
-  'johnpatrickhalling.notfound'
+  'johnpatrickhalling.content'
 ]);
 
 app.config(function($routeProvider, $locationProvider) {
@@ -14,13 +13,13 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl: 'views/home.html',
       controller: 'ContentController'
     })
-    .when('/blog', {
+    .when('/updates', {
       templateUrl: 'views/blog.html',
       controller: 'BlogController'
     })
-    .when('/notfound', {
-      templateUrl: 'views/notfound.html',
-      controller: 'NotFoundController'
+    .when('/updates/:postID', {
+      templateUrl: 'views/blog.html',
+      controller: 'BlogController'
     })
-    .otherwise({redirectTo: '/notfound'});
+    .otherwise({redirectTo: '/'});
 });

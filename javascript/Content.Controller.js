@@ -5,7 +5,7 @@ var app = angular.module('johnpatrickhalling.content', [
   'ngSanitize'
 ]);
 
-app.controller('ContentController', function($scope, $http, Wordpress) {
+app.controller('ContentController', function($scope, Wordpress) {
   Wordpress.getAbout($scope);
   Wordpress.getTour($scope);
 });

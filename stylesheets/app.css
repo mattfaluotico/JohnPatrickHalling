@@ -167,6 +167,13 @@ nav ul li {
     .nav-title {
       display: block; } }
 
+.notfound {
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 18pt;
+  color: #333333;
+  margin-top: 50px; }
+
 body {
   -webkit-animation: fadeIn 0.5s ease-in;
   -moz-animation: fadeIn 0.5s ease-in;
