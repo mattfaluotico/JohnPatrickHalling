@@ -91,13 +91,17 @@ nav {
 
 #title {
   background-image: url("../images/cover.jpg");
-  background-position: bottom left;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #D9DADC; }
 
 #about {
-  background-color: blue; }
+  background-image: url("../images/aboutimg2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #D9DADC; }
 
 #tour-dates {
   background-color: purple; }

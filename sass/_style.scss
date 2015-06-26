@@ -1,12 +1,9 @@
 #title {
-	background-image: url('../images/cover.jpg');
-	background-position: bottom left;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: #D9DADC;
+	@include bkg('../images/cover.jpg');
 }
+
 #about {
-	background-color: blue;
+	@include bkg('../images/aboutimg2.jpg');
 }
 #tour-dates {
 	background-color: purple;

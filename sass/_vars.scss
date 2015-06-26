@@ -19,3 +19,12 @@ $link-padding: 20px;
 	font-weight: 300;
 	font-size: 14;
 }
+
+
+@mixin bkg($img) {
+	background-image: url($img);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #D9DADC;
+}
