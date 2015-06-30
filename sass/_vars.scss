@@ -1,6 +1,7 @@
 // colors
 $black: #333333;
 $hover: #33b5e5;
+$light-text: #524D51;
 
 // screen sizes
 $mobile: max-width 480px;
@@ -17,7 +18,7 @@ $link-margin: 20px;
 @mixin read {
 	font-family: Roboto, Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 16;
+	font-size: 14pt;
 }
 
 @mixin bkg($img) {
