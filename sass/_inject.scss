@@ -1,0 +1,60 @@
+// ****************
+// INJECTED WORDPRESS CONTENT
+// ****************
+
+.inject {
+	@include read;
+
+	* {
+		padding-top: 10px;
+	}
+
+	p {
+		line-height: 17pt;
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	strong {
+		font-weight: 600;
+	}
+
+	h1 {
+		@include sans(22pt, 600);
+	}
+
+	h2 {
+		@include sans(20pt, 600);
+	}
+
+	h3 {
+		@include sans(18pt, 600);
+	}
+
+	ul {
+		padding-left: 20px;
+		list-style: square;
+	}
+
+	ol {
+		list-style: decimal;
+		padding-left: 20px;
+	}
+
+	a {
+		text-decoration: underline;
+		color: inherit;
+		&:hover {
+			color: $hover;
+		}
+	}
+
+	.wp-caption-text {
+		padding-top: 0;
+		font-style: italic;
+		color: #524D51;	
+		font-size: 10pt;
+	}
+}

@@ -1,4 +1,5 @@
 section {
+	position: relative;
 	height: 100vh;
 	width: 100%;
 	@include display(flex);
@@ -16,6 +17,9 @@ nav {
 	top: 0;
 	left: 0;
 	padding: 10px;
+	@include media($mobile) {
+		padding-left: 0;
+	}
 }
 
 .content {
@@ -25,7 +29,7 @@ nav {
 	display: block;
 
 	@include media($mobile) {
-		width: 100%;
+		width: 90%;
 	}
 }
 
@@ -46,3 +50,5 @@ nav {
 		float: none;
 	};
 }
+
+

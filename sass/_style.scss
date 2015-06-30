@@ -1,10 +1,6 @@
 #title {
 	@include bkg('../images/cover.jpg');
 }
-
-#about {
-	@include bkg('../images/aboutimg2.jpg');
-}
 #tour-dates {
 	background-color: purple;
 }
@@ -17,6 +13,10 @@
 #blog {
 	background-color: red;
 }
+
+// **************
+// NAVIGATION
+// **************
 
 a {
 	@include transition(all 0.2s);
@@ -42,17 +42,21 @@ nav ul li {
 }
 
 .right ul li a {
-	padding-left: $link-padding;
+	margin-left: $link-margin;
 
 	@include media($little-screen) {
-		padding-left: 0;
-		padding-right: $link-padding;
+		margin-left: 0;
+		margin-right: $link-margin;
 	};
 }
 
 .left ul li a {
-	padding-right: $link-padding;
+	margin-right: $link-margin;
 }
+
+// ************
+// TITLE
+// ************
 
 .main-title {
 	@include sans(52pt,700);
@@ -82,8 +86,53 @@ nav ul li {
 	}
 }
 
+aside, article {
+	width: 50%;
+	display: inline-block;
+	float: left;
+
+	@include media($little-screen) {
+		width: 100%;
+	}
+}
+
 .notfound {
 	@include sans(18pt,300);
 	color: $black;
 	margin-top: 50px;
 }
+
+@mixin about-fit {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	z-index: -1;
+};
+
+// ******************
+// ABOUT SECTION
+// ******************
+
+.about-article-bgk {
+	@include about-fit();
+	left: 0;
+	background-color: #D0CECF;
+
+	@include media($little-screen) {
+		width: 100%;
+	}
+}
+
+.about-img-container {
+	@include about-fit();
+		
+	right: 0;
+	overflow: none;
+	@include bkg("../images/aboutimg2 copy.jpg");
+
+	@include media($little-screen) {
+		display: none;
+	}
+}
+

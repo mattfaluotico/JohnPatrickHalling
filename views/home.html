@@ -1,15 +1,14 @@
 <section id='title'>
-		<div class='content title-info'>
-			<h1 class='main-title'>JOHN PATRICK HALLING</h1>
-		</div>
-	</section>
+	<div class='content title-info'>
+		<h1 class='main-title'>John Patrick Halling</h1>
+	</div>
+</section>
 <section id='about'>
 	<div ng-controller='ContentController' class="content">
-		<div ng-bind-html='about'></div>
-
-		<div ng-repeat="post in posts">
-			<div ng-bind-html='post.content'></div>
-		</div>
-		
+		<article>
+			<div class="about-article-bgk"></div>
+			<div ng-bind-html='about' class="inject"></div>
+		</article>
+		<aside class="about-img-container"></aside>
 	</div>
 </section>
