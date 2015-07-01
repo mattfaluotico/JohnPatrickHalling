@@ -100,17 +100,24 @@ nav {
   background-repeat: no-repeat;
   background-color: #D9DADC; }
 
-#tour-dates {
-  background-color: purple; }
+#tour {
+  background-image: url("../images/tour.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #D9DADC; }
 
 #music {
-  background-color: green; }
+  background-color: #1C1C1E; }
 
 #videos {
-  background-color: #33b5e5; }
+  background-color: #272822; }
 
 #blog {
   background-color: red; }
+
+#contact {
+  background-color: white; }
 
 a {
   -webkit-transition: all 0.2s;
@@ -203,7 +210,7 @@ aside, article {
   z-index: -1;
   right: 0;
   overflow: none;
-  background-image: url("../images/aboutimg2 copy.jpg");
+  background-image: url("../images/aboutimg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -238,17 +245,23 @@ body {
   to {
     opacity: 1; } }
 .inject {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 14pt; }
-  .inject * {
-    margin-top: 10px; }
+  font-size: 14pt;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .inject hr {
+    border: 0;
+    height: 1px;
+    background-color: #333333; }
   .inject p {
-    line-height: 17pt; }
+    line-height: 18pt;
+    margin-top: 20px;
+    margin-right: 20px; }
   .inject em {
     font-style: italic; }
   .inject strong {
-    font-weight: 600; }
+    font-weight: 400; }
   .inject h1 {
     font-family: 'Roboto Slab', Helvetica, sans-serif;
     font-weight: 600;
@@ -278,10 +291,11 @@ body {
     color: #524D51;
     font-size: 11pt; }
   .inject blockquote {
-    font-family: Georgia, Times New Roman, Serif;
+    font-family: 'Roboto Slab';
     font-style: italic;
     color: #524D51;
     padding-left: 15px;
-    border-left: 2px solid #524D51; }
+    border-left: 2px solid #524D51;
+    margin-right: 40px; }
 
 /*# sourceMappingURL=app.css.map */

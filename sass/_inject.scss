@@ -5,12 +5,19 @@
 .inject {
 	@include read;
 
-	* {
-		margin-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	hr {
+		border: 0;
+		height: 1px;
+		background-color: $black;
 	}
 
 	p {
-		line-height: 17pt;
+		line-height: 18pt;
+		margin-top: 20px;
+		margin-right: 20px;
 	}
 
 	em {
@@ -18,11 +25,12 @@
 	}
 
 	strong {
-		font-weight: 600;
+		font-weight: 400;
 	}
 
 	h1 {
 		@include sans(22pt, 600);
+		
 	}
 
 	h2 {
@@ -30,7 +38,7 @@
 	}
 
 	h3 {
-		@include sans(18pt, 600);
+	@include sans(18pt, 600);
 	}
 
 	ul {
@@ -59,10 +67,11 @@
 	}
 
 	blockquote {
-		font-family: Georgia, Times New Roman, Serif;
+		font-family: 'Roboto Slab';
 		font-style: italic;
 		color: $light-text;
 		padding-left: 15px;
 		border-left: 2px solid $light-text;
+		margin-right: 40px;
 	}
 }

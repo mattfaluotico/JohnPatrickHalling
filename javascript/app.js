@@ -6,7 +6,7 @@ var app = angular.module('johnpatrickhalling', [
   'johnpatrickhalling.content'
 ]);
 
-app.config(function($routeProvider, $locationProvider) {
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
   $routeProvider
     .when('/', {
@@ -22,4 +22,27 @@ app.config(function($routeProvider, $locationProvider) {
       controller: 'BlogController'
     })
     .otherwise({redirectTo: '/'});
-});
+}]);
+
+app.controller('ContentController', [
+  '$scope', 
+  'Wordpress', 
+  function($scope, Wordpress) {
+    Wordpress.getAbout($scope);
+    Wordpress.getTour($scope);
+  }]
+);
+
+app.controller('BlogController', [
+  '$scope', 
+  '#routeParams', 
+  'Wordpress', 
+  function($scope, $routeParams, Wordpress) {
+    var postID = $routeParams.postID;
+    if (postID) {
+      Wordpress.getPost(postID);
+    } else {
+      Wordpress.getAll();
+    }
+  }]
+);

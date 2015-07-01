@@ -1,17 +1,20 @@
 #title {
 	@include bkg('../images/cover.jpg');
 }
-#tour-dates {
-	background-color: purple;
+#tour {
+	@include bkg('../images/tour.jpg');
 }
 #music {
-	background-color: green;
+background-color: #1C1C1E;
 }
 #videos {
-	background-color: #33b5e5;
+	background-color: #272822;
 }
 #blog {
 	background-color: red;
+}
+#contact {
+	background-color: white;
 }
 
 // **************
@@ -129,7 +132,7 @@ aside, article {
 		
 	right: 0;
 	overflow: none;
-	@include bkg("../images/aboutimg2 copy.jpg");
+	@include bkg("../images/aboutimg.jpg");
 
 	@include media($little-screen) {
 		display: none;
