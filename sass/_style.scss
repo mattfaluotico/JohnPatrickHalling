@@ -5,7 +5,7 @@
 	@include bkg('../images/tour.jpg');
 }
 #music {
-background-color: #1C1C1E;
+	background-color: #65687A; /* #1C1C1E; */
 }
 #videos {
 	background-color: #272822;
@@ -41,6 +41,10 @@ nav ul li {
 		line-height: 18pt;
 		text-decoration: none;
 		display: block;
+
+		&.active {
+			color: $hover;
+		}
 	}
 }
 
@@ -139,3 +143,18 @@ aside, article {
 	}
 }
 
+// ********************
+// MUSIC SECTION
+// ********************
+
+.newalbum {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.bandcamp {
+	margin: 0 auto;
+	height: 120px;
+	width: 400px;
+}

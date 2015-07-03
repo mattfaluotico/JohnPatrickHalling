@@ -4,6 +4,7 @@ section {
 	width: 100%;
 	@include display(flex);
 	@include align-items(center);
+	text-align: center;
 }
 
 nav {
@@ -27,7 +28,6 @@ nav {
 	max-width: 986px;
 	margin: 0 auto;
 	display: block;
-
 	@include media($mobile) {
 		width: 90%;
 	}

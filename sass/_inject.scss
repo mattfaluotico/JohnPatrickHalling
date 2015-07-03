@@ -7,6 +7,7 @@
 
 	margin-top: 20px;
 	margin-bottom: 20px;
+	// text-align: left;
 
 	hr {
 		border: 0;
@@ -67,6 +68,7 @@
 	}
 
 	blockquote {
+		text-align: left;
 		font-family: 'Roboto Slab';
 		font-style: italic;
 		color: $light-text;

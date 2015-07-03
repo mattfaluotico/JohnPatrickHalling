@@ -54,7 +54,8 @@ section {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  -ms-flex-align: center; }
+  -ms-flex-align: center;
+  text-align: center; }
 
 nav {
   width: 100%;
@@ -108,7 +109,8 @@ nav {
   background-color: #D9DADC; }
 
 #music {
-  background-color: #1C1C1E; }
+  background-color: #65687A;
+  /* #1C1C1E; */ }
 
 #videos {
   background-color: #272822; }
@@ -139,6 +141,8 @@ nav ul li {
     line-height: 18pt;
     text-decoration: none;
     display: block; }
+    nav ul li a.active {
+      color: #33b5e5; }
 
 .right ul li a {
   margin-left: 20px; }
@@ -219,6 +223,16 @@ aside, article {
     .about-img-container {
       display: none; } }
 
+.newalbum {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto; }
+
+.bandcamp {
+  margin: 0 auto;
+  height: 120px;
+  width: 400px; }
+
 body {
   -webkit-animation: fadeIn 0.5s ease-in;
   -moz-animation: fadeIn 0.5s ease-in;
@@ -291,6 +305,7 @@ body {
     color: #524D51;
     font-size: 11pt; }
   .inject blockquote {
+    text-align: left;
     font-family: 'Roboto Slab';
     font-style: italic;
     color: #524D51;
