@@ -5,7 +5,7 @@
 	@include bkg('../images/tour.jpg');
 }
 #music {
-	background-color: #65687A; /* #1C1C1E; */
+	@include bkg('../images/music.jpg');
 }
 #videos {
 	background-color: #272822;
@@ -59,6 +59,16 @@ nav ul li {
 
 .left ul li a {
 	margin-right: $link-margin;
+}
+
+// *************
+// GENERIC
+// *************
+
+
+.subtitle {
+	color: white;
+	@include sans(18pt, 300);
 }
 
 // ************
@@ -146,15 +156,45 @@ aside, article {
 // ********************
 // MUSIC SECTION
 // ********************
+.player {
+	height: 450px;
+	width: 450px;
 
-.newalbum {
-	width: 400px;
-	height: 400px;
-	margin: 0 auto;
+	 @include media($mobile) {
+	 	height: 250px;
+	 	width: 250px;
+	 }
+}
+
+.sources {
+	margin: 25px;
+}
+
+.music-source {
+	
+	text-align: center;	
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 50px;
+	width: 150px;
+
+	img {
+		height: 100%;
+		max-width: 100%;
+	}
 }
 
 .bandcamp {
-	margin: 0 auto;
-	height: 120px;
-	width: 400px;
+	margin: 30px auto;
+}
+
+.video {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
 }

@@ -109,8 +109,11 @@ nav {
   background-color: #D9DADC; }
 
 #music {
-  background-color: #65687A;
-  /* #1C1C1E; */ }
+  background-image: url("../images/music.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #D9DADC; }
 
 #videos {
   background-color: #272822; }
@@ -153,6 +156,12 @@ nav ul li {
 
 .left ul li a {
   margin-right: 20px; }
+
+.subtitle {
+  color: white;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 18pt; }
 
 .main-title {
   font-family: 'Roboto Slab', Helvetica, sans-serif;
@@ -223,15 +232,39 @@ aside, article {
     .about-img-container {
       display: none; } }
 
-.newalbum {
-  width: 400px;
-  height: 400px;
-  margin: 0 auto; }
+.player {
+  height: 450px;
+  width: 450px; }
+  @media screen and (max-width: 480px) {
+    .player {
+      height: 250px;
+      width: 250px; } }
+
+.sources {
+  margin: 25px; }
+
+.music-source {
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 150px; }
+  .music-source img {
+    height: 100%;
+    max-width: 100%; }
 
 .bandcamp {
-  margin: 0 auto;
-  height: 120px;
-  width: 400px; }
+  margin: 30px auto; }
+
+.video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; }
 
 body {
   -webkit-animation: fadeIn 0.5s ease-in;
@@ -305,12 +338,15 @@ body {
     color: #524D51;
     font-size: 11pt; }
   .inject blockquote {
-    text-align: left;
-    font-family: 'Roboto Slab';
     font-style: italic;
     color: #524D51;
     padding-left: 15px;
     border-left: 2px solid #524D51;
     margin-right: 40px; }
+    @media screen and (max-width: 480px) {
+      .inject blockquote {
+        padding-left: 0;
+        border-left: 0;
+        margin-right: 0; } }
 
 /*# sourceMappingURL=app.css.map */
