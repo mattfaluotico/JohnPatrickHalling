@@ -235,6 +235,10 @@ aside, article {
 .player {
   height: 450px;
   width: 450px; }
+  @media screen and (max-width: 768px) {
+    .player {
+      height: 350px;
+      width: 350px; } }
   @media screen and (max-width: 480px) {
     .player {
       height: 250px;
@@ -266,6 +270,9 @@ aside, article {
   height: 100%;
   width: 100%; }
 
+.tour {
+  background-color: rgba(255, 255, 255, 0.6); }
+
 body {
   -webkit-animation: fadeIn 0.5s ease-in;
   -moz-animation: fadeIn 0.5s ease-in;
@@ -295,8 +302,15 @@ body {
   font-family: 'Roboto Slab', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 14pt;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .inject ul {
+    list-style: square;
+    list-style-position: inside; }
+  .inject ol {
+    padding-left: 20px;
+    list-style: decimal;
+    list-style-position: inside; }
   .inject hr {
     border: 0;
     height: 1px;
@@ -321,12 +335,6 @@ body {
     font-family: 'Roboto Slab', Helvetica, sans-serif;
     font-weight: 600;
     font-size: 18pt; }
-  .inject ul {
-    padding-left: 20px;
-    list-style: square; }
-  .inject ol {
-    list-style: decimal;
-    padding-left: 20px; }
   .inject a {
     text-decoration: underline;
     color: inherit; }

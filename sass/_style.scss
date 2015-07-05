@@ -160,7 +160,12 @@ aside, article {
 	height: 450px;
 	width: 450px;
 
-	 @include media($mobile) {
+	@include media($little-screen) {
+		height: 350px;
+		width: 350px;
+	}
+
+	@include media($mobile) {
 	 	height: 250px;
 	 	width: 250px;
 	 }
@@ -197,4 +202,12 @@ aside, article {
 	right: 0;
 	height: 100%;
 	width: 100%;
+}
+
+// ****************
+// TOUR
+// ****************
+
+.tour {
+	background-color: rgba(255,255,255,.60);
 }
