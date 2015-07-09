@@ -8,4 +8,5 @@ var app = angular.module('johnpatrickhalling.content', [
 app.controller('ContentController', function($scope, Wordpress) {
   Wordpress.getAbout($scope);
   Wordpress.getTour($scope);
+  Wordpress.getAll($scope);
 });

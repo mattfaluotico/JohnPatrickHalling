@@ -270,8 +270,34 @@ aside, article {
   height: 100%;
   width: 100%; }
 
+.music {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px; }
+
 .tour {
-  background-color: rgba(255, 255, 255, 0.6); }
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.post-title {
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14pt;
+  padding-top: 10px; }
+
+.post-date {
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 10pt;
+  color: gray;
+  padding-top: 10px; }
+
+.post {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 20px;
+  padding: 10px;
+  color: #333333; }
 
 body {
   -webkit-animation: fadeIn 0.5s ease-in;
@@ -301,9 +327,10 @@ body {
 .inject {
   font-family: 'Roboto Slab', Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 14pt;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  font-size: 12pt;
+  mrgin-top: 10px;
+  margin-bottom: 10px;
+  text-align: justify; }
   .inject ul {
     list-style: square;
     list-style-position: inside; }
@@ -314,7 +341,8 @@ body {
   .inject hr {
     border: 0;
     height: 1px;
-    background-color: #333333; }
+    background-color: #333333;
+    width: 80%; }
   .inject p {
     line-height: 18pt;
     margin-top: 20px;
@@ -340,6 +368,10 @@ body {
     color: inherit; }
     .inject a:hover {
       color: #33b5e5; }
+  .inject.tour {
+    text-align: center; }
+    .inject.tour p {
+      margin-top: 5px; }
   .inject .wp-caption-text {
     margin-top: 0;
     font-style: italic;

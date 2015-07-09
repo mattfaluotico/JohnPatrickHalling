@@ -4,7 +4,7 @@
 	</div>
 </section>
 <section id='music'>
-	<div class='content'>
+	<div class='content music'>
 		<h1 class="subtitle">New album Boy in the Water out now</h1>
 		<div class='bandcamp'>
 			<iframe class='player' style="border: 0;" src="http://bandcamp.com/EmbeddedPlayer/album=3517985430/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://jphalling.bandcamp.com/album/boy-in-the-water">Boy in the Water by John Patrick Halling</a></iframe>
@@ -22,15 +22,27 @@
 		<div ng-bind-html='tour' class='inject tour'></div>
 	</div>
 </section>
+<section id="blog">
+	<div class="content">
+		<div class = "post" ng-repeat="postid in ids">
+			<h1 class="post-title">{{posts[postid].title}}</h1>
+			<h2 class="post-date">{{posts[postid].date}}</h2>
+			<div ng-bind-html='posts[postid].content' class='inject'></div>
+		</div>
+	</div>
+</section>
 <section id='videos'>
 	<iframe class="video" src="https://www.youtube.com/embed/lHKRzWSe_CY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </section>
 <section id='about'>
-	<div ng-controller='ContentController' class='content'>
+	<div class='content'>
 		<article>
 			<div class='about-article-bgk'></div>
 			<div ng-bind-html='about' class='inject'></div>
 		</article>
 		<aside class='about-img-container'></aside>
 	</div>
+</section>
+<section id="content">
+	
 </section>

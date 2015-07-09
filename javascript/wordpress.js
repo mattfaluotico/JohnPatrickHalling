@@ -37,7 +37,7 @@ app.service('Wordpress', function($http) {
   };
 
   this.getAll = function($scope) {
-    if (posts.populated) {
+    if (!posts.populated) {
       getPosts($scope, $http, '');
     }
   };
@@ -51,20 +51,21 @@ app.service('Wordpress', function($http) {
       .success(function(response) {
 
         var post = {
-          date: response.date,
+          date: cleanDate(response.date),
           title: response.title,
           content: response.content
         };
 
         $scope.post = post;
         posts[postID] = post;
-
+        $scope.ids.push(postID);
       })
       .error(function() {
         this.$scope.post = {
           date: new Date(),
           title: 'No post',
-          content: 'Unable to load post'
+          content: 'Unable to load post',
+          id: 0
         }
       });
     }
@@ -73,20 +74,24 @@ app.service('Wordpress', function($http) {
   function getPosts($scope, $http, query) {
     $http.get('https://public-api.wordpress.com/rest/v1.1/sites/93818088/posts/' + query)
     .success(function(response) {
-
       var res = response.posts;
-      $scope.posts = [];
+      
+      $scope.posts = {};
+      $scope.ids = [];
 
       res.forEach(function(post) {
         posts[post.ID] = {
           title: post.title,
           summary: post.excerpt,
           content: post.content,
-          id: post.ID
+          date: cleanDate(post.date)
         }
+        $scope.ids.push(post.ID)
       })
 
+      posts.populate = true;
       $scope.posts = posts;
+
     })
     .error(function() {
       this.$scope[item.str] = 'My name is John Patrck Halling. I play kick ass music in Kent, OH.'
@@ -94,3 +99,9 @@ app.service('Wordpress', function($http) {
   }
 
 });
+
+
+function cleanDate(uglyDate) {
+  var date = /(\d{4}-\d{2}-\d{2})/;
+  return uglyDate.match(date)[1];
+}

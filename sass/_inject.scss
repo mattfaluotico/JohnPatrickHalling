@@ -5,9 +5,9 @@
 .inject {
 	@include read;
 
-	padding-top: 20px;
-	padding-bottom: 20px;
-	// text-align: left;
+	mrgin-top: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
 
 	ul {
 		list-style: square;
@@ -24,6 +24,7 @@
 		border: 0;
 		height: 1px;
 		background-color: $black;
+		width: 80%;
 	}
 
 	p {
@@ -62,6 +63,14 @@
 		}
 	}
 
+	&.tour {
+		p {
+			margin-top: 5px;
+		}
+
+		text-align: center;
+	}
+
 	.wp-caption-text {
 		margin-top: 0;
 		font-style: italic;
@@ -83,3 +92,4 @@
 		}
 	}
 }
+

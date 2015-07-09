@@ -30,7 +30,7 @@ a {
 
 nav {
 	background-color: white;
-}
+} 
 
 nav ul li {
 	float: left;
@@ -208,6 +208,44 @@ aside, article {
 // TOUR
 // ****************
 
-.tour {
-	background-color: rgba(255,255,255,.60);
+
+.music {
+	background-color: rgba(0,0,0,.60);
+	padding: 20px;
 }
+
+.tour {
+	background-color: rgba(255,255,255,.5);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+// ******************
+// POST
+// *****************
+
+.post-title {
+	$font-size: 14pt;
+	@include sans($font-size, 400);
+	padding-top: 10px;
+}
+
+.post-date {
+	@include sans(10pt, 100);
+	color: gray;
+	padding-top: 10px;
+}
+
+.post {
+	text-align: left;
+	background-color: rgba(255,255,255,.5);
+	margin: 20px;
+	padding: 10px;
+	color: $black;
+}
+
+// ***************
+// Contact
+// ***************
+
+
