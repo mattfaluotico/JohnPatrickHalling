@@ -14,8 +14,7 @@
 	background-color: red;
 }
 #contact {
-	display: block;
-	min-height: clear;
+	
 }
 
 // **************
@@ -249,3 +248,40 @@ aside, article {
 // Contact
 // ***************
 
+form {
+	width: 100%;
+
+	$spacing: 2%;
+
+	.contact {
+		font-size: 12pt;
+		padding: $spacing;
+		margin-bottom: 10px;
+		float: left;
+		border-color: $black;
+		border-width: 1px;
+	}
+
+	.contact-form {
+		width: 50% - $spacing;
+		height: 40px;
+	}
+
+	.cl {
+		margin-right: $spacing;
+	}
+
+	.cr {
+		margin-left: $spacing;
+	}
+
+	.contact-button {
+		background-color: white;
+	}
+
+	.contact-message {
+		width: 100%;
+		height: 100px;
+	}
+
+}

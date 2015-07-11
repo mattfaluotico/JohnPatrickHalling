@@ -31,7 +31,7 @@ app.service('Wordpress', function($http) {
         $scope.tour = tour = response.content;
       })
       .error(function() {
-        $scope.tour = 'Im touring around the US.'
+        $scope.tour = 'I\'m touring around the US.'
       });
     }
   };
