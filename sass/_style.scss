@@ -11,10 +11,13 @@
 	background-color: #272822;
 }
 #blog {
-	background-color: red;
+	@include bkg('../images/blog.jpg');
 }
 #contact {
-	
+	background-color: #D0CECF;
+	min-height: 0;
+	height: 500px;
+	text-align: left;
 }
 
 // **************
@@ -254,12 +257,19 @@ form {
 	$spacing: 2%;
 
 	.contact {
+		color: $black;
 		font-size: 12pt;
 		padding: $spacing;
 		margin-bottom: 10px;
 		float: left;
 		border-color: $black;
 		border-width: 1px;
+		background-color: #D0CECF;
+
+		&:focus {
+			outline-color: $hover;
+			border: 0;
+		}
 	}
 
 	.contact-form {
@@ -277,6 +287,16 @@ form {
 
 	.contact-button {
 		background-color: white;
+		border-color: $black;
+		box-shadow: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-width: 1px;
+		@include sans(14pt, 600);
+
+		&:active {
+			outline-color: $hover;
+		}
 	}
 
 	.contact-message {
@@ -284,4 +304,10 @@ form {
 		height: 100px;
 	}
 
+}
+
+.cont {
+	@include sans(22pt, 600);
+	margin-left: 10px;
+	margin-bottom: 20px;	
 }

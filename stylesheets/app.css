@@ -119,7 +119,17 @@ nav {
   background-color: #272822; }
 
 #blog {
-  background-color: red; }
+  background-image: url("../images/blog.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #D9DADC; }
+
+#contact {
+  background-color: #D0CECF;
+  min-height: 0;
+  height: 500px;
+  text-align: left; }
 
 a {
   -webkit-transition: all 0.2s;
@@ -299,12 +309,17 @@ aside, article {
 form {
   width: 100%; }
   form .contact {
+    color: #333333;
     font-size: 12pt;
     padding: 2%;
     margin-bottom: 10px;
     float: left;
     border-color: #333333;
-    border-width: 1px; }
+    border-width: 1px;
+    background-color: #D0CECF; }
+    form .contact:focus {
+      outline-color: #33b5e5;
+      border: 0; }
   form .contact-form {
     width: 48%;
     height: 40px; }
@@ -313,10 +328,27 @@ form {
   form .cr {
     margin-left: 2%; }
   form .contact-button {
-    background-color: white; }
+    background-color: white;
+    border-color: #333333;
+    box-shadow: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 1px;
+    font-family: 'Roboto Slab', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14pt; }
+    form .contact-button:active {
+      outline-color: #33b5e5; }
   form .contact-message {
     width: 100%;
     height: 100px; }
+
+.cont {
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 22pt;
+  margin-left: 10px;
+  margin-bottom: 20px; }
 
 body {
   -webkit-animation: fadeIn 0.5s ease-in;
