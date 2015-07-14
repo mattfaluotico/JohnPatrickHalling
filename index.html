@@ -12,6 +12,15 @@
     <link rel='stylesheet' type='text/css' href='stylesheets/font-awesome.min.css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,300' rel='stylesheet' type='text/css'>
+
+    <base href="/">
+
+    <!-- **************** -->
+    <!-- DEVELOPER BY -->
+    <!-- Matt Faluotico -->
+    <!-- @MattFaluotico -->
+    <!-- July 2015 -->
+
   </head>
   <body>
     <nav>
@@ -21,12 +30,12 @@
         </div>
         <div class='left'>
           <ul>
-            <li><a href='#'>Music</a></li>
-            <li><a href='#'>Tour</a></li>
-            <li><a href='#/blog'>Blog</a></li>
-            <li><a href='#'>Videos</a></li>
-            <li><a href='#'>About</a></li>
-            <li><a href='#'>Contact</a></li>
+            <li><a id="l_Music" href=''>Music</a></li>
+            <li><a id="l_Tour" href=''>Tour</a></li>
+            <li><a id="l_Blog" href=''>Blog</a></li>
+            <li><a id="l_Videos" href=''>Videos</a></li>
+            <li><a id="l_About" href=''>About</a></li>
+            <li><a id="l_Contact" href=''>Contact</a></li>
           </ul>
         </div>
         <div class='right'>
@@ -43,9 +52,11 @@
     </nav>
 
     <div ng-view></div>
-    <script src='bower_components/angular/angular.js'></script>
-    <script src='bower_components/angular-route/angular-route.js'></script>
-    <script src='bower_components/angular-sanitize/angular-sanitize.js'></script>
+    <script src='bower_components/angular/angular.min.js'></script>
+    <script src='bower_components/angular-route/angular-route.min.js'></script>
+    <script src='bower_components/angular-sanitize/angular-sanitize.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
     <script src='javascript/app.js'></script>
     <script src='javascript/wordpress.js'></script>
     <script src='javascript/Content.Controller.js'></script>

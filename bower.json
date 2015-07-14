@@ -4,6 +4,7 @@
   "dependencies": {
     "angular": "1.3.16",
     "angular-route": "1.3.16",
-    "angular-sanitize": "1.3.16"
+    "angular-sanitize": "1.3.16",
+    "jquery.scrollTo": "~2.1.1"
   }
 }
