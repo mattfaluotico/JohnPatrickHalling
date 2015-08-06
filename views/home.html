@@ -24,7 +24,7 @@
 </section>
 <section id="blog">
 	<div class="content">
-		<div class = "post" ng-repeat="postid in ids">
+		<div class = "post" ng-repeat="postid in ids | limitTo:2">
 			<h1 class="post-title">{{posts[postid].title}}</h1>
 			<h2 class="post-date">{{posts[postid].date}}</h2>
 			<div ng-bind-html='posts[postid].content' class='inject'></div>
