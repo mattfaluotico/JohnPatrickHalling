@@ -3,9 +3,17 @@ $black: #333333;
 $hover: #33b5e5;
 $light-text: #524D51;
 
+$nav-height: 50px;
+
 // screen sizes
 $mobile: max-width 480px;
 $little-screen: max-width 768px;
+
+$phone : 	"(min-width: 400px)"; // larger than mobile
+$little : 	"(min-width: 550px)"; // phablet and small screens
+$desktop: "(min-width: 1000px)"; // desktop
+
+// Common sizes
 
 $link-margin: 20px;
 

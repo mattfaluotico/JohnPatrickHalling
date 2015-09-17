@@ -11,7 +11,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
   $routeProvider
     .when('/', {
       templateUrl: 'views/home.html',
-      controller: 'ContentController'
+      controller: 'Home'
     })
     .when('/updates/:postID', {
       templateUrl: 'views/blog.html',
