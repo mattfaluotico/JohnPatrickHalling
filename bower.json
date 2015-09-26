@@ -5,6 +5,7 @@
     "angular": "1.3.16",
     "angular-route": "1.3.16",
     "angular-sanitize": "1.3.16",
-    "instafeed.js": "~1.3.2"
+    "instafeed.js": "~1.3.2",
+    "sheetrock": "jquery-sheetrock#~1.0.0"
   }
 }

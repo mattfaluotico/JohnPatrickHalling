@@ -7,11 +7,14 @@ var app = angular.module('johnpatrickhalling', [
 ]);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-
   $routeProvider
     .when('/', {
       templateUrl: 'views/home.html',
       controller: 'Home'
+    })
+    .when('/about', {
+      templateUrl: 'views/about.html',
+      controller: 'About'
     })
     .when('/updates/:postID', {
       templateUrl: 'views/blog.html',
@@ -19,4 +22,3 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     })
     .otherwise({redirectTo: '/'});
 }]);
-
