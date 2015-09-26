@@ -6,16 +6,19 @@ $light-text: #524D51;
 $nav-height: 50px;
 
 // screen sizes
-$mobile: max-width 480px;
-$little-screen: max-width 768px;
-
-$phone : 	"(min-width: 400px)"; // larger than mobile
-$little : 	"(min-width: 550px)"; // phablet and small screens
-$desktop: "(min-width: 1000px)"; // desktop
+$screen-small: min-width 480px;
+$screen-large: min-width 768px;
 
 // Common sizes
 
 $link-margin: 20px;
+
+@mixin box-shadow() {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	&:hover {
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+}
 
 @mixin sans($size, $weight) {
 	font-family: 'Roboto Slab', Helvetica, sans-serif;

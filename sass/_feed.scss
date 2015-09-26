@@ -1,5 +1,5 @@
 .feed {
-	margin-top: 100px;
+	
 	text-align: center;
 }
 
@@ -17,21 +17,22 @@
 		opacity: 0;
 		height: 100%;
 		width: auto;
-    // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	  // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 		@include transition(all 0.2s);
 
 		&:hover {
-		  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		  // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 		}
+
+		@include box-shadow();
 	}
-	@media #{$desktop} {
+	@include media($screen-large) {
 		float: left;
 	}
 
 	&.ip {
-		@media #{$desktop} {
+		@include media($screen-large) {
 			height: 200px;
 			width: 200px;
 
@@ -60,7 +61,7 @@
 	}
 
 	&.ip-l {
-		@media #{$desktop} {
+		@include media($screen-large) {
 			height: 200px;
 			width: 200px;
 			margin-bottom: 100px;
@@ -72,7 +73,7 @@
 	}
 
 	&.ip-b {
-		@media #{$desktop} {
+		@include media($screen-large) {
 			height: 200px;
 			width: 200px;
 			margin: 0;

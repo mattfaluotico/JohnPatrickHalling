@@ -1,22 +1,20 @@
 ; 'use strct';
 
-var app = angular.module('johnpatrickhalling.content', [
+var app = angular.module('johnpatrickhalling.controllers', [
   'ngRoute',
   'ngSanitize'
 ]);
 
-app.controller('About', ['$scope', 'Wordpress' function($scope, Wordpress){
+app.controller('About', ['$scope', 'Wordpress', function($scope, Wordpress){
   $scope.aboutContent = Wordpress.about();
 }]);
 
-// app.controller('Blog', ['$scope', '$routeParams', 'Wordpress', function($scope, $routeParams, Wordpress) {
-//   Wordpress.recent();
-// }]);
-
 app.controller('Videos', [function(){}]);
 app.controller('Music', [function(){}]);
+app.controller('Contact', [function(){}]);
+app.controller('Blog', [function(){}]);
 
-app.controller('Tour', [function(){
+app.controller('Show', [function(){
   var toursheet = "";
   $scope.dates = [];
   sheetrock({
@@ -32,8 +30,8 @@ app.controller('Tour', [function(){
             date: rows[i].cellsArray[DATE],
 						name: rows[i].cellsArray[NAME],
 						location: rows[i].cellsArray[LOCATION],
-						desc: rows[i].cellsArray[DESC]
-						url: rows[i].cellsArray[URL],
+						desc: rows[i].cellsArray[DESC],
+						url: rows[i].cellsArray[URL]
           });
         }
       } else {
