@@ -40,10 +40,13 @@ html {
   width: 90%; }
   @media screen and (min-width: 480px) {
     .global-container {
-      width: 80%;
       max-width: 930px;
       margin: 0 auto;
       display: block; } }
+  @media screen and (min-width: 1335px) {
+    .global-container {
+      max-width: 1160px;
+      padding-right: 230px; } }
 
 .content {
   margin: 0;
@@ -55,14 +58,14 @@ html {
 .left {
   float: left;
   display: inline-block; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1035px) {
     .left {
       float: none; } }
 
 .right {
   float: right;
   display: inline-block; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1035px) {
     .right {
       float: none; } }
 
@@ -72,7 +75,8 @@ nav {
   margin: 0;
   float: left;
   z-index: 100;
-  padding-right: 30px; }
+  padding-right: 30px;
+  text-align: right; }
   @media screen and (min-width: 480px) {
     nav {
       display: block; } }
@@ -122,12 +126,12 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
     .insta-photo .paralax:hover {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1035px) {
     .insta-photo {
       float: left; } }
   .insta-photo.ip {
     margin: 10px; }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1035px) {
       .insta-photo.ip {
         margin: 0;
         height: 200px;
@@ -146,14 +150,14 @@ body {
           margin-right: 50px; }
         .insta-photo.ip:nth-of-type(6) {
           margin: 0; } }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1035px) {
     .insta-photo.ip-l {
       height: 200px;
       width: 200px;
       margin-bottom: 100px; }
       .insta-photo.ip-l:last-of-type {
         margin-bottom: 0; } }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1035px) {
     .insta-photo.ip-b {
       height: 200px;
       width: 200px;

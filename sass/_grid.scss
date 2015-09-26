@@ -4,10 +4,14 @@
 	width: 90%;
 
 	@include media($screen-small) {
-		width: 80%;
 		max-width: $sidebar-size + 700px;
 		margin: 0 auto;
 		display: block;
+	}
+
+	@include media($screen-full) {
+		max-width: (2 * $sidebar-size) + 700px;
+		padding-right: $sidebar-size;
 	}
 }
 
