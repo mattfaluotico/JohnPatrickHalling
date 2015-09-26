@@ -6,8 +6,54 @@ nav {
   z-index: 100;
   padding-right: 30px;
   text-align: right;
+  @include sans(14pt, 300);
 
   @include media($screen-small) {
     display: block;
+  }
+
+  iframe {
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  .title {
+    font-size: 24pt;
+    font-weight: 700;
+  }
+
+  .author {
+    margin: 30px 0 30px 0;
+    font-size: 9pt;
+    font-style: italic;
+  }
+
+  .menu-main {
+    li {
+      margin: 10px 0 10px 0;
+
+      a {
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .menu-social ul {
+    text-align: right;
+    margin: 30px 0 30px 0;
+    li {
+      display: inline;
+      margin-left: 10px;
+
+      a {
+        text-decoration: none;
+        color: $black;
+      }
+    }
   }
 }

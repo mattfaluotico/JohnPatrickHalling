@@ -10,26 +10,22 @@
 
     <link rel='stylesheet' type='text/css' href='stylesheets/app.css'>
     <link rel='stylesheet' type='text/css' href='stylesheets/font-awesome.min.css'>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:500,300' rel='stylesheet' type='text/css'> -->
-
-    <base href="/">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300' rel='stylesheet' type='text/css'>
+    <!-- <base href="/"> -->
   </head>
   <body>
     <div class="global-container">
       <nav class="sidebar">
-        <div class="title"></div>
+        <h1 class="title">JOHN PATRICK HALLING</h1>
         <div class="menu-main">
           <ul>
-            <li><a href=''>Music</a></li>
-            <li><a href=''>Tour</a></li>
-            <li><a href=''>Blog</a></li>
-            <li><a href=''>Videos</a></li>
             <li><a href=''>About</a></li>
+            <li><a href=''>Blog</a></li>
+            <li><a href=''>Music</a></li>
+            <li><a href=''>Shows</a></li>
+            <li><a href=''>Videos</a></li>
             <li><a href=''>Contact</a></li>
           </ul>
-        </div>
-        <div class="player">
-          <iframe style="border: 0; width: 200px; height: 342px;" src="http://bandcamp.com/EmbeddedPlayer/album=3517985430/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://jphalling.bandcamp.com/album/boy-in-the-water">Boy in the Water by John Patrick Halling</a></iframe>
         </div>
         <div class="menu-social">
           <ul>
@@ -41,6 +37,10 @@
             <li><a href='https://open.spotify.com/artist/5TXODhT3zzRqzDwLFSJmb9'><i class='fa fa-spotify'></i></a></li>
           </ul>
         </div>
+        <div class="player">
+          <iframe onload="this.style.opacity = '1'" style="border: 0; width: 200px; height: 342px;" src="http://bandcamp.com/EmbeddedPlayer/album=3517985430/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://jphalling.bandcamp.com/album/boy-in-the-water">Boy in the Water by John Patrick Halling</a></iframe>
+        </div>
+        <p class="author"><a href="http://mattf.xyz">Site by M.Faluotico</a></p>
       </nav>
       <div class="content" ng-view></div>
     </div>
