@@ -1,11 +1,11 @@
 .global-container {
-	// position: relative;
+
 	min-height: 100vh;
 	width: 90%;
+
 	@include media($screen-small) {
 		width: 80%;
-		max-width: 1100px;
-		padding-right: 200px;
+		max-width: $sidebar-size + 700px;
 		margin: 0 auto;
 		display: block;
 	}
@@ -13,8 +13,10 @@
 
 .content {
 	margin: 0;
-	margin-left: 200px;
+	min-height: 100vh;
+
 	@include media($screen-small) {
+		margin-left: $sidebar-size;
 	}
 }
 

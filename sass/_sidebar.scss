@@ -1,8 +1,12 @@
 nav {
-  width: 200px;
-  height: 100%;
-  display: inline-block;
+  display: none;
+  width: $sidebar-size;
   margin: 0;
   float: left;
   z-index: 100;
+  padding-right: 30px;
+
+  @include media($screen-small) {
+    display: block;
+  }
 }

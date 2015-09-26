@@ -1,5 +1,4 @@
 .feed {
-	
 	text-align: center;
 }
 
@@ -32,7 +31,11 @@
 	}
 
 	&.ip {
+
+		margin: 10px;
+
 		@include media($screen-large) {
+			margin: 0;
 			height: 200px;
 			width: 200px;
 
