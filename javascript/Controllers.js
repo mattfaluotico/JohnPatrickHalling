@@ -47,7 +47,7 @@ app.controller('Home', ['$scope', function ($scope) {
       get: 'tagged',
       tagName: 'jphontheroad',
       clientId: '2e30e5749f384593ba20b0fa39608837',
-      limit: 6,
+      limit: 18,
       resolution: "standard_resolution",
       template: "<div class='insta-photo ip'><img class='paralax' onload=\"this.style.opacity='1'\"src='{{image}}' alt='something is blocking the content from loading'></div>",
       after: function() {

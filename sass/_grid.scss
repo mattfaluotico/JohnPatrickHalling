@@ -5,10 +5,10 @@ body {
 .global-container {
 
 	width: 90%;
+	margin: 0 auto;
 
 	@include media($screen-small) {
 		max-width: $sidebar-size + 700px;
-		margin: 0 auto;
 		display: block;
 	}
 

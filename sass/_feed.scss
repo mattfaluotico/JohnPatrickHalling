@@ -1,3 +1,5 @@
+$divide: 50px;
+
 .feed {
 	text-align: center;
 	overflow: hidden;
@@ -14,6 +16,37 @@ body {
 	background-color: #E4E4E4;
 }
 
+.cover {
+	height: 300px;
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: $divide;
+
+	perspective: 2000px;
+	-webkit-perspective: 2000px;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	@include media($screen-large) {
+		height: 700px;
+		width: 700px;
+	}
+}
+
+.insta-photo, .cover {
+	.paralax {
+		opacity: 0;
+		height: 100%;
+		width: auto;
+		@include transition(all 0.2s);
+		@include box-shadow();
+	}
+}
+
 .insta-photo {
 
 	height: 300px;
@@ -24,78 +57,45 @@ body {
 	perspective: 1000px;
 	-webkit-perspective: 1000px;
 
-	.paralax {
-		opacity: 0;
-		height: 100%;
-		width: auto;
-	  // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		@include transition(all 0.2s);
-
-		&:hover {
-		  // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-		}
-
-		@include box-shadow();
-	}
 	@include media($screen-large) {
 		float: left;
 	}
 
 	&.ip {
 
-		margin: 10px;
+		margin: 25px;
 
 		@include media($screen-large) {
-			margin: 0;
+			margin: 0 $divide $divide 0;
 			height: 200px;
 			width: 200px;
+
+			&:nth-of-type(3n) {
+				margin: 0;
+			}
 
 			&:nth-of-type(1) {
 				height: 450px;
 				width: 450px;
-				margin: 0 50px 50px 0;
+				margin: 0 $divide $divide 0;
 			}
 
 			&:nth-of-type(2) {
-				margin-bottom: 50px;
+				margin: 0;
+				margin-bottom: $divide;
 			}
 			&:nth-of-type(3) {
+				margin: 0;
 				margin-bottom: 0;
 			}
 			&:nth-of-type(4) {
-				margin-right: 50px;
+				margin: 0 $divide $divide 0;
 			}
 			&:nth-of-type(5) {
-				margin-right: 50px;
+				margin: 0 $divide $divide 0;
 			}
 			&:nth-of-type(6) {
-				margin: 0;
-			}
-		}
-	}
-
-	&.ip-l {
-		@include media($screen-large) {
-			height: 200px;
-			width: 200px;
-			margin-bottom: 100px;
-
-			&:last-of-type {
-				margin-bottom: 0;
-			}
-		}
-	}
-
-	&.ip-b {
-		@include media($screen-large) {
-			height: 200px;
-			width: 200px;
-			margin: 0;
-			margin-right: 100px;
-
-			&:last-of-type {
-				margin: 0;
+				margin: 0 0 $divide 0;
 			}
 		}
 	}

@@ -39,11 +39,11 @@ body {
   padding-top: 30px; }
 
 .global-container {
-  width: 90%; }
+  width: 90%;
+  margin: 0 auto; }
   @media screen and (min-width: 480px) {
     .global-container {
       max-width: 930px;
-      margin: 0 auto;
       display: block; } }
   @media screen and (min-width: 1335px) {
     .global-container {
@@ -78,7 +78,7 @@ nav {
   z-index: 100;
   padding-right: 30px;
   text-align: right;
-  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-family: 'Merriweather', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 14pt; }
   @media screen and (min-width: 480px) {
@@ -112,7 +112,7 @@ nav {
         color: #333333; }
 
 body {
-  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-family: 'Merriweather', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 12pt; }
 
@@ -154,6 +154,33 @@ body {
 body {
   background-color: #E4E4E4; }
 
+.cover {
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  perspective: 2000px;
+  -webkit-perspective: 2000px; }
+  .cover img {
+    width: 100%;
+    height: 100%; }
+  @media screen and (min-width: 1035px) {
+    .cover {
+      height: 700px;
+      width: 700px; } }
+
+.insta-photo .paralax, .cover .paralax {
+  opacity: 0;
+  height: 100%;
+  width: auto;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .insta-photo .paralax:hover, .cover .paralax:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
 .insta-photo {
   height: 300px;
   width: 300px;
@@ -161,54 +188,33 @@ body {
   display: inline-block;
   perspective: 1000px;
   -webkit-perspective: 1000px; }
-  .insta-photo .paralax {
-    opacity: 0;
-    height: 100%;
-    width: auto;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-    .insta-photo .paralax:hover {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
   @media screen and (min-width: 1035px) {
     .insta-photo {
       float: left; } }
   .insta-photo.ip {
-    margin: 10px; }
+    margin: 25px; }
     @media screen and (min-width: 1035px) {
       .insta-photo.ip {
-        margin: 0;
+        margin: 0 50px 50px 0;
         height: 200px;
         width: 200px; }
+        .insta-photo.ip:nth-of-type(3n) {
+          margin: 0; }
         .insta-photo.ip:nth-of-type(1) {
           height: 450px;
           width: 450px;
           margin: 0 50px 50px 0; }
         .insta-photo.ip:nth-of-type(2) {
+          margin: 0;
           margin-bottom: 50px; }
         .insta-photo.ip:nth-of-type(3) {
+          margin: 0;
           margin-bottom: 0; }
         .insta-photo.ip:nth-of-type(4) {
-          margin-right: 50px; }
+          margin: 0 50px 50px 0; }
         .insta-photo.ip:nth-of-type(5) {
-          margin-right: 50px; }
+          margin: 0 50px 50px 0; }
         .insta-photo.ip:nth-of-type(6) {
-          margin: 0; } }
-  @media screen and (min-width: 1035px) {
-    .insta-photo.ip-l {
-      height: 200px;
-      width: 200px;
-      margin-bottom: 100px; }
-      .insta-photo.ip-l:last-of-type {
-        margin-bottom: 0; } }
-  @media screen and (min-width: 1035px) {
-    .insta-photo.ip-b {
-      height: 200px;
-      width: 200px;
-      margin: 0;
-      margin-right: 100px; }
-      .insta-photo.ip-b:last-of-type {
-        margin: 0; } }
+          margin: 0 0 50px 0; } }
 
 /*# sourceMappingURL=app.css.map */

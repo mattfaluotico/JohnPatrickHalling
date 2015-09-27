@@ -25,13 +25,13 @@ $link-margin: 20px;
 }
 
 @mixin sans($size, $weight) {
-	font-family: 'Roboto Slab', Helvetica, sans-serif;
+	font-family: 'Merriweather', Helvetica, sans-serif;
 	font-weight: $weight;
 	font-size: $size;
 }
 
 @mixin read {
-	font-family: 'Roboto Slab', Helvetica, sans-serif;
+	font-family: 'Merriweather', Helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 12pt;
 }
