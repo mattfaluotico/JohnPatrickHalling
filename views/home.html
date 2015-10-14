@@ -12,7 +12,7 @@
 		<h1 class="subtitle">Get it on...</h1>
 		<div class="sources">
 			<a class="music-source" href=""><img src="images/spotify.png"></a>
-			<a class="music-source" href="https://geo.itunes.apple.com/us/album/boy-in-the-water/id979967814?"><img src="http://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg"></a>			
+			<a class="music-source" href="https://geo.itunes.apple.com/us/album/boy-in-the-water/id979967814?"><img src="http://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg"></a>
 			<a class="music-source" href=""><img src="images/bandcamp.png"></a>
 		</div>
 	</div>
@@ -20,15 +20,6 @@
 <section id='tour'>
 	<div class="content">
 		<div ng-bind-html='tour' class='inject tour'></div>
-	</div>
-</section>
-<section id="blog">
-	<div class="content">
-		<div class = "post" ng-repeat="postid in ids">
-			<h1 class="post-title">{{posts[postid].title}}</h1>
-			<h2 class="post-date">{{posts[postid].date}}</h2>
-			<div ng-bind-html='posts[postid].content' class='inject'></div>
-		</div>
 	</div>
 </section>
 <section id='videos'>
