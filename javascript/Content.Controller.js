@@ -8,9 +8,7 @@ var app = angular.module('johnpatrickhalling.content', [
 app.controller('ContentController', function($scope, Wordpress, $location) {
   Wordpress.getAbout($scope);
   Wordpress.getTour($scope);
-  Wordpress.getAll($scope);
 
- 
   $("#l_Music").click(function(event) {
     event.preventDefault();
     $.scrollTo("#music", 500);
@@ -21,11 +19,6 @@ app.controller('ContentController', function($scope, Wordpress, $location) {
     event.preventDefault();
     location.hash = "tour";
     $.scrollTo("#tour", 500);
-  });
-  $("#l_Blog").click(function(event) {
-    event.preventDefault();
-    location.hash = "blog";
-    $.scrollTo("#blog", 500);
   });
   $("#l_Videos").click(function(event) {
     event.preventDefault();
