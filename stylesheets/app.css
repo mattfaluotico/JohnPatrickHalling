@@ -309,17 +309,17 @@ aside, article {
 form {
   width: 100%; }
   form .contact {
+    display: block;
     color: #333333;
     font-size: 12pt;
     padding: 2%;
     margin-bottom: 10px;
-    float: left;
     border-color: #333333;
     border-width: 1px;
     background-color: #D0CECF; }
     form .contact:focus {
-      outline-color: #33b5e5;
-      border: 0; }
+      outline: none;
+      border: #33b5e5 solid 1px; }
   form .contact-form {
     width: 48%;
     height: 40px; }
