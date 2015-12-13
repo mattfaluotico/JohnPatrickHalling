@@ -21,7 +21,7 @@
     <!-- July 2015 -->
 
   </head>
-  <body>
+  <body ng-controller="ContentController">
     <nav>
       <div class='content'>
         <div class='nav-title'>
@@ -29,11 +29,11 @@
         </div>
         <div class='left'>
           <ul>
-            <li><a id="l_About" href=''>Bio</a></li>
-            <li><a id="l_Music" href=''>Music</a></li>
-            <li><a id="l_Tour" href=''>Shows</a></li>
-            <li><a id="l_Videos" href=''>Videos</a></li>
-            <li><a id="l_Contact" href=''>Contact</a></li>
+            <li><a ng-click="s('bio')">Bio</a></li>
+            <li><a ng-click="s('music')">Music</a></li>
+            <li><a ng-click="s('tour')">Shows</a></li>
+            <li><a ng-click="s('videos')">Videos</a></li>
+            <li><a ng-click="s('contact')">Contact</a></li>
           </ul>
         </div>
         <div class='right'>
@@ -53,6 +53,7 @@
     <script src='bower_components/angular/angular.min.js'></script>
     <script src='bower_components/angular-route/angular-route.min.js'></script>
     <script src='bower_components/angular-sanitize/angular-sanitize.min.js'></script>
+    <script src='bower_components/angular-scroll/angular-scroll.min.js'></script>
     <script src='javascript/app.js'></script>
     <script src='javascript/wordpress.js'></script>
     <script src='javascript/Content.Controller.js'></script>
