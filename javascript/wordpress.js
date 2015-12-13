@@ -1,12 +1,13 @@
 var app = angular.module('johnpatrickhalling');
 
-app.service('Wordpress', function($http) {
+app.service('Wordpress', function($http, $sce) {
 
   var ABOUT = '1';
   var TOUR = '5';
+  var VIDEO = '79';
 
   var posts = [];
-  var about, tour;
+  var about, tour, videos;
 
   this.getAbout = function($scope) {
     if (about) {
@@ -21,6 +22,20 @@ app.service('Wordpress', function($http) {
       });
     }
   };
+
+  this.getVideos = function($scope) {
+    if (videos) {
+      $scope.videos = videos;
+    } else {
+      $http.get('https://public-api.wordpress.com/rest/v1.1/sites/93818088/posts/' + VIDEO)
+      .success(function(response) {
+        $scope.videos = videos = $sce.trustAsHtml(response.content);
+      })
+      .error(function() {
+        $scope.videos = 'My name is John Patrck Halling. I play kick ass music in Kent, OH.'
+      });
+    }
+  }
 
   this.getTour = function($scope) {
     if (tour) {
@@ -75,7 +90,7 @@ app.service('Wordpress', function($http) {
     $http.get('https://public-api.wordpress.com/rest/v1.1/sites/93818088/posts/' + query)
     .success(function(response) {
       var res = response.posts;
-      
+
       $scope.posts = {};
       $scope.ids = [];
 
