@@ -8,7 +8,7 @@
 	@include bkg('../images/music.jpg');
 }
 #videos {
-	background-color: #272822;
+	background-color: #D0CECF;
 }
 #blog {
 	@include bkg('../images/blog.jpg');
@@ -33,7 +33,7 @@ a {
 
 nav {
 	background-color: white;
-} 
+}
 
 nav ul li {
 	float: left;
@@ -146,7 +146,7 @@ aside, article {
 
 .about-img-container {
 	@include about-fit();
-		
+
 	right: 0;
 	overflow: none;
 	@include bkg("../images/aboutimg.jpg");
@@ -179,8 +179,8 @@ aside, article {
 }
 
 .music-source {
-	
-	text-align: center;	
+
+	text-align: center;
 	display: inline-block;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -251,40 +251,55 @@ aside, article {
 // Contact
 // ***************
 
-form {
-	width: 100%;
+.social {
+  @include sans(18pt, 200);
 
-	$spacing: 2%;
+  text-align: center;
+
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    margin: 10px 0;
+
+    &:hover {
+      color: $hover;
+    }
+  }
+}
+
+form {
+	$spacing: 80px;
+
+  label {
+    width: $spacing;
+    @include sans(14pt, 200);
+    display: inline-block;
+    height: 40px;
+    text-align: right;
+    padding-right: 5px;
+  }
 
 	.contact {
-		display: block;
+		// display: block;
 		color: $black;
-		font-size: 12pt;
-		padding: $spacing;
+		font-size: 14pt;
 		margin-bottom: 10px;
-		border-color: $black;
-		border-width: 1px;
+    border: $black solid 1px;
 		background-color: #D0CECF;
+    box-sizing: border-box;
+    padding-left: 10px;
 
 		&:focus {
 			outline: none;
-			border: $hover solid 1px;
+			border-color: $hover;
 		}
 	}
-
 	.contact-form {
-		width: 50% - $spacing;
+		width: 500px;
 		height: 40px;
 	}
-
-	.cl {
-		margin-right: $spacing;
-	}
-
-	.cr {
-		margin-left: $spacing;
-	}
-
 	.contact-button {
 		background-color: white;
 		border-color: $black;
@@ -292,6 +307,7 @@ form {
 		padding-left: 10px;
 		padding-right: 10px;
 		border-width: 1px;
+    margin-left: $spacing + 5px;
 		@include sans(14pt, 600);
 
 		&:active {
@@ -300,14 +316,16 @@ form {
 	}
 
 	.contact-message {
-		width: 100%;
+    padding-left: 10px;
+    vertical-align: top;;
+    resize: vertical;
+    border: solid $black 1px;
+		width: 500px;
 		height: 100px;
 	}
-
 }
 
 .cont {
 	@include sans(22pt, 600);
-	margin-left: 10px;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }

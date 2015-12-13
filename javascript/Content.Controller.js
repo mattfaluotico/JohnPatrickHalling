@@ -2,11 +2,16 @@
 
 var app = angular.module('johnpatrickhalling.content', [
   'ngRoute',
-  'ngSanitize'
+  'ngSanitize',
+  'duScroll'
 ]);
 
-app.controller('ContentController', function($scope, Wordpress, $location) {
+app.controller('ContentController', function($document, $scope, Wordpress, $location) {
   Wordpress.getAbout($scope);
   Wordpress.getTour($scope);
   Wordpress.getVideos($scope);
+
+  $scope.s = function(id) {
+    $document.scrollToElementAnimated(document.getElementById(id), 30);
+  }
 });

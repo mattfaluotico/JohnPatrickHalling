@@ -1,9 +1,9 @@
 <section id='title'>
 	<div class='content title-info'>
-		<h1 class='main-title'>John Patrick Halling</h1>
+		<h1 class='main-title'>John Patrick Halling <span>&</span> Outside Voices</h1>
 	</div>
 </section>
-<section id='about'>
+<section id='bio'>
 	<div class='content'>
 		<article>
 			<div class='about-article-bgk'></div>
@@ -35,13 +35,23 @@
 	<div ng-bind-html='videos' class='content'></div>
 </section>
 <section id="contact">
-	<div class="content">
+	<div style="margin: auto;">
 		<h2 class="cont">What can I do for you?</h2>
+    <div class="social">
+      <a href="mailto:johnpatrickhalling@gmail.com"><i class="fa fa-envelope-o"></i> johnpatrickhalling@gmail.com</a>
+      <a><i class="fa fa-phone"></i>(330) 931-9393</a>
+    </div>
 		<form action="//formspree.io/johnpatrickhalling@gmail.com"
       method="POST">
-	    <input class="contact contact-form" placeholder="name" type="text" name="name">
-	    <input class="contact contact-form" placeholder="email" type="email" name="_replyto">
-    <textarea class="contact contact-message" placeholder="message" type="textarea" name="message"></textarea>
+	    <div>
+        <label>Name</label>
+        <input class="contact contact-form" placeholder="John Smith" type="text" name="name"/> </div>
+	    <div>
+        <label>Email</label>
+        <input class="contact contact-form" placeholder="you@email.com" type="email" name="_replyto"/></div>
+      <div>
+        <label>Message</label>
+        <textarea class="contact contact-message" placeholder="Hey there!" type="textarea" name="message"></textarea></div>
     <input class="contact-button" type="submit" value="Send">
 </form>
 	</div>

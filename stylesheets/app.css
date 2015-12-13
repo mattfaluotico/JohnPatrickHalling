@@ -116,7 +116,7 @@ nav {
   background-color: #D9DADC; }
 
 #videos {
-  background-color: #272822; }
+  background-color: #D0CECF; }
 
 #blog {
   background-image: url("../images/blog.jpg");
@@ -306,48 +306,67 @@ aside, article {
   padding: 10px;
   color: #333333; }
 
-form {
-  width: 100%; }
-  form .contact {
+.social {
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 18pt;
+  text-align: center; }
+  .social a {
     display: block;
+    text-decoration: none;
     color: #333333;
-    font-size: 12pt;
-    padding: 2%;
-    margin-bottom: 10px;
-    border-color: #333333;
-    border-width: 1px;
-    background-color: #D0CECF; }
-    form .contact:focus {
-      outline: none;
-      border: #33b5e5 solid 1px; }
-  form .contact-form {
-    width: 48%;
-    height: 40px; }
-  form .cl {
-    margin-right: 2%; }
-  form .cr {
-    margin-left: 2%; }
-  form .contact-button {
-    background-color: white;
-    border-color: #333333;
-    box-shadow: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-width: 1px;
-    font-family: 'Roboto Slab', Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 14pt; }
-    form .contact-button:active {
-      outline-color: #33b5e5; }
-  form .contact-message {
-    width: 100%;
-    height: 100px; }
+    margin: 10px 0; }
+    .social a:hover {
+      color: #33b5e5; }
+
+form label {
+  width: 80px;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 14pt;
+  display: inline-block;
+  height: 40px;
+  text-align: right;
+  padding-right: 5px; }
+form .contact {
+  color: #333333;
+  font-size: 14pt;
+  margin-bottom: 10px;
+  border: #333333 solid 1px;
+  background-color: #D0CECF;
+  box-sizing: border-box;
+  padding-left: 10px; }
+  form .contact:focus {
+    outline: none;
+    border-color: #33b5e5; }
+form .contact-form {
+  width: 500px;
+  height: 40px; }
+form .contact-button {
+  background-color: white;
+  border-color: #333333;
+  box-shadow: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-width: 1px;
+  margin-left: 85px;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 14pt; }
+  form .contact-button:active {
+    outline-color: #33b5e5; }
+form .contact-message {
+  padding-left: 10px;
+  vertical-align: top;
+  resize: vertical;
+  border: solid #333333 1px;
+  width: 500px;
+  height: 100px; }
 
 .cont {
   font-family: 'Roboto Slab', Helvetica, sans-serif;
   font-weight: 600;
   font-size: 22pt;
-  margin-left: 10px;
   margin-bottom: 20px; }
 
 body {
