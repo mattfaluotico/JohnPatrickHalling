@@ -8,16 +8,17 @@
 	@include bkg('../images/music.jpg');
 }
 #videos {
-	background-color: #D0CECF;
+	background-color: #1C1F2D;
 }
 #blog {
 	@include bkg('../images/blog.jpg');
 }
 #contact {
-	background-color: #D0CECF;
+	background-color: #1C1F2D;
 	min-height: 0;
 	height: 500px;
 	text-align: left;
+  color: white;
 }
 
 // **************
@@ -253,14 +254,12 @@ aside, article {
 
 .social {
   @include sans(18pt, 200);
-
   text-align: center;
-
 
   a {
     display: block;
     text-decoration: none;
-    color: $black;
+    color: white;
     margin: 10px 0;
 
     &:hover {
@@ -283,11 +282,12 @@ form {
 
 	.contact {
 		// display: block;
-		color: $black;
+		color: white;
 		font-size: 14pt;
 		margin-bottom: 10px;
-    border: $black solid 1px;
-		background-color: #D0CECF;
+    border: white solid 1px;
+		background-color: transparent;
+    color: white;
     box-sizing: border-box;
     padding-left: 10px;
 
@@ -302,7 +302,7 @@ form {
 	}
 	.contact-button {
 		background-color: white;
-		border-color: $black;
+		border-color: white;
 		box-shadow: 0;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -317,9 +317,10 @@ form {
 
 	.contact-message {
     padding-left: 10px;
+    background-color: transparent;
     vertical-align: top;;
     resize: vertical;
-    border: solid $black 1px;
+    border: solid white 1px;
 		width: 500px;
 		height: 100px;
 	}

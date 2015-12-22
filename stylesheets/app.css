@@ -116,7 +116,7 @@ nav {
   background-color: #D9DADC; }
 
 #videos {
-  background-color: #D0CECF; }
+  background-color: #1C1F2D; }
 
 #blog {
   background-image: url("../images/blog.jpg");
@@ -126,10 +126,11 @@ nav {
   background-color: #D9DADC; }
 
 #contact {
-  background-color: #D0CECF;
+  background-color: #1C1F2D;
   min-height: 0;
   height: 500px;
-  text-align: left; }
+  text-align: left;
+  color: white; }
 
 a {
   -webkit-transition: all 0.2s;
@@ -314,7 +315,7 @@ aside, article {
   .social a {
     display: block;
     text-decoration: none;
-    color: #333333;
+    color: white;
     margin: 10px 0; }
     .social a:hover {
       color: #33b5e5; }
@@ -329,11 +330,12 @@ form label {
   text-align: right;
   padding-right: 5px; }
 form .contact {
-  color: #333333;
+  color: white;
   font-size: 14pt;
   margin-bottom: 10px;
-  border: #333333 solid 1px;
-  background-color: #D0CECF;
+  border: white solid 1px;
+  background-color: transparent;
+  color: white;
   box-sizing: border-box;
   padding-left: 10px; }
   form .contact:focus {
@@ -344,7 +346,7 @@ form .contact-form {
   height: 40px; }
 form .contact-button {
   background-color: white;
-  border-color: #333333;
+  border-color: white;
   box-shadow: 0;
   padding-left: 10px;
   padding-right: 10px;
@@ -357,9 +359,10 @@ form .contact-button {
     outline-color: #33b5e5; }
 form .contact-message {
   padding-left: 10px;
+  background-color: transparent;
   vertical-align: top;
   resize: vertical;
-  border: solid #333333 1px;
+  border: solid white 1px;
   width: 500px;
   height: 100px; }
 
