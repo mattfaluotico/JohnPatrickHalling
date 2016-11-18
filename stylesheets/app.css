@@ -116,7 +116,11 @@ nav {
   background-color: #D9DADC; }
 
 #videos {
-  background-color: #1C1F2D; }
+  background-image: url("../images/videos.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #D9DADC; }
 
 #blog {
   background-image: url("../images/blog.jpg");
@@ -174,11 +178,9 @@ nav ul li {
 .main-title {
   font-family: 'Roboto Slab', Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 52pt;
-  float: right;
-  width: 50%;
+  font-size: 40pt;
   text-transform: capitalize;
-  text-align: right;
+  text-align: center;
   color: white; }
 
 @media screen and (max-width: 480px) {

@@ -8,7 +8,7 @@
 	@include bkg('../images/music.jpg');
 }
 #videos {
-	background-color: #1C1F2D;
+	@include bkg('../images/videos.jpg');
 }
 #blog {
 	@include bkg('../images/blog.jpg');
@@ -80,11 +80,9 @@ nav ul li {
 // ************
 
 .main-title {
-	@include sans(52pt,700);
-	float: right;
-	width: 50%;
+	@include sans(40pt,700);
 	text-transform: capitalize;
-	text-align: right;
+	text-align: center;
 	color: white;
 }
 
